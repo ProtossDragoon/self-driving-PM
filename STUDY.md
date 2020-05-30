@@ -1,4 +1,6 @@
-# 접근
+# 뚝섬에서 반포까지 
+
+## Approach
 
 - Deep-Learning 으로 풀어가기에는, rpi 에서는 너무 무겁다.
 - 아주 Basic 한 주행을 하는 것에 꼭 Deep Learning Model 이 필요하다고 생각하지는 않는다.
