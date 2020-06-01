@@ -101,7 +101,7 @@
 
 ### About Algorithms
 
-- Curved Line Detection Example (with Sliding window approach) : https://www.hackster.io/kemfic/curved-lane-detection-34f771
+- Curved Line Detection with Code (with Sliding window approach) : https://www.hackster.io/kemfic/curved-lane-detection-34f771
 
 
 <br>
