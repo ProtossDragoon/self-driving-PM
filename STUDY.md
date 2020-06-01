@@ -52,7 +52,7 @@
 
 <br>
 
-## Reference
+# Reference
 
 <br>
 
@@ -60,19 +60,19 @@
 
 <br>
 
-### Legacy
+## Legacy
 
 - Getting Started with LAIDAR Arduino : https://youtu.be/VhbFbxyOI1k
 
 <br>
 
-### Library
+## Library Reference
 
 - how to install vidstab : https://pypi.org/project/vidstab/
 - how to use vidstab : https://adamspannbauer.github.io/python_video_stab/html/usage.html#working-with-live-video
 
 <br>
 
-### Papers
+## Paper Reference
 
 <br>
