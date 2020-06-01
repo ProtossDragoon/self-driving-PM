@@ -61,8 +61,8 @@
 ### About Calibration
 
 - 카메라 캘리브레이션이란 : https://darkpgmr.tistory.com/153
-- 호모그래피 좌표계 : https://darkpgmr.tistory.com/153
-- 스테레오 정합 : https://m.blog.naver.com/PostView.nhn?blogId=dldlsrb45&logNo=220879295400&proxyReferer=https:%2F%2Fwww.google.com%2F
+- 호모그래피 좌표계란 : https://darkpgmr.tistory.com/153
+- 스테레오 정합이란 : https://m.blog.naver.com/PostView.nhn?blogId=dldlsrb45&logNo=220879295400&proxyReferer=https:%2F%2Fwww.google.com%2F
 
 <br>
 
