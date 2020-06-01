@@ -40,9 +40,10 @@
 - (optional) 카메라 detph mapping 하기
 - 카메라 캘리브레이션하기
 - 이미지 OIS 적용하기
-- Python 을 C/C++ Source Code 로 옮겨 최적화하기
+- 
 - (selection) LCD Display 연결하기
 - (selection) 적외선 Camera 에도 시도해보기
+
 
 <br>
 
