@@ -14,6 +14,7 @@
 - 속도가 빠르지 않다.
 - 전원 공급이 어렵지 않지만, 적절한 전력 소비가 요구된다.
 - 모빌리티에 특정 기기를 장착할 시 굉장히 많이 흔들린다.
+- 차선변경의 필요성이 줄어든다.
 - 한강변 자전거도로의 경우, 차선이 굉장히 명확하다.
 
 <br>
@@ -28,6 +29,15 @@
 
 ### Installation
 
+<br>
+
+### Roadmap
+
+- 듀얼 카메라 가능한지 공부해 보기 (깊이 추정)
+- 듀얼 카메라 캘리브레이션하기
+- 듀얼 카메라 detph mapping 하기
+- depth mapping 된 이미지 + 합쳐진 이미지 OIS 적용하기
+- (selection) LCD Display 연결하기
 
 <br>
 
@@ -39,6 +49,12 @@
 <br>
 
 ## Reference
+
+<br>
+
+- Example for Camera Calibration with Dual Camera + Depth Mapping with Real time : https://youtu.be/eBZm40z7E8Y
+
+<br>
 
 ### Library
 
