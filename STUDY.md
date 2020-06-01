@@ -108,6 +108,7 @@
 
 ## Library Reference
 
+- how to insert GUI to picamera monitor : https://raspberrypi.stackexchange.com/questions/78059/is-there-a-python-picam-gui-out-there
 - how to install vidstab : https://pypi.org/project/vidstab/
 - how to use vidstab : https://adamspannbauer.github.io/python_video_stab/html/usage.html#working-with-live-video
 - how to save video file with opencv : https://www.learnopencv.com/read-write-and-display-a-video-using-opencv-cpp-python/
