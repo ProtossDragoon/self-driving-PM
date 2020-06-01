@@ -71,8 +71,10 @@
 **About Depth** <br>
 - Example for Camera Calibration with Dual Camera + Depth Mapping with Real time : https://youtu.be/eBZm40z7E8Y
   - Guide : https://www.arducam.com/docs/cameras-for-raspberry-pi/synchronized-stereo-camera-hat/opencv-and-depth-map-on-arducam-stereo-camera-hat-tutorial/
-  - Source Code : https://github.com/erget/StereoVision
     - Guide's Credit : https://medium.com/stereopi/opencv-and-depth-map-on-stereopi-tutorial-62cb6792bbed
+    - COMPARING THE SPEED OF C++ AND PYTHON CODE ON THE RASPBERRY PI : https://stereopi.com/blog/opencv-comparing-speed-c-and-python-code-raspberry-pi-stereo-vision
+    > We decided to measure the actual speed difference and find the performance 'bottleneck'.
+  - Source Code : https://github.com/erget/StereoVision
 
 <br>
 
