@@ -24,6 +24,9 @@
 ## Env
 
 - Raspberry pi B4, 2GB RAM
+- Raspberry pi Camera module x 2
+- (selection) LCD Camera
+- (selection) infrared radiation Camera module x 2
 
 <br>
 
@@ -54,6 +57,12 @@
 <br>
 
 - Example for Camera Calibration with Dual Camera + Depth Mapping with Real time : https://youtu.be/eBZm40z7E8Y
+
+<br>
+
+### Legacy
+
+- Getting Started with LAIDAR Arduino : https://youtu.be/VhbFbxyOI1k
 
 <br>
 
