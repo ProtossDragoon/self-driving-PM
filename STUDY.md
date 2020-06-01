@@ -60,11 +60,6 @@
 
 <br>
 
-## Legacy
-
-- Getting Started with LAIDAR Arduino : https://youtu.be/VhbFbxyOI1k
-
-<br>
 
 ## Library Reference
 
@@ -74,5 +69,11 @@
 <br>
 
 ## Paper Reference
+
+<br>
+
+## Legacy (not used)
+
+- Getting Started with LAIDAR Arduino : https://youtu.be/VhbFbxyOI1k
 
 <br>
