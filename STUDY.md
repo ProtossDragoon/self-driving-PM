@@ -123,6 +123,8 @@
 
 - python 은 어떻게 동작하는가 : https://cjh5414.github.io/about-python-and-how-python-works/
 - Why python is slow? : http://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/
+- Raspberry pi 를 위한 Google Edge TPU : https://blog.xcoda.net/103
+> SSD MobileNet Version 이 8~10FPS 정도가 나온다고 하니 꽤나 준수하다.
 
 <br>
 
