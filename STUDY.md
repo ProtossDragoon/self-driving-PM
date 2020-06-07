@@ -71,6 +71,20 @@
 - [LCD 후보](http://www.11st.co.kr/product/SellerProductDetail.tmall?method=getSellerProductDetail&prdNo=1953092467&gclid=CjwKCAjwztL2BRATEiwAvnALcs0lYERT7KWWM5maC-BDRbgo3wr_3f1EPVtY3SYv8ehh2SMccfOWcRoCWzAQAvD_BwE&utm_term=&utm_campaign=%B1%B8%B1%DB%BC%EE%C7%CEPC+%C3%DF%B0%A1%C0%DB%BE%F7&utm_source=%B1%B8%B1%DB_PC_S_%BC%EE%C7%CE&utm_medium=%B0%CB%BB%F6)
 - [예쁜데 얘 하면 카메라 덮개 장착 가능?](https://www.cytron.io/p-5-inches-tft-touch-screen-for-rpi3-and-rpi4b)
 
+<br>
+
+### About Stabiliation
+
+#### H/W Solution
+
+- 나날이 늘어가는 모바일의 OIS 도 하드웨어 없이는 안 됨. 단순히 소프트웨어 처리만 한 것이 아님.
+- 짐벌을 구매하는 것이 가장 현명
+
+<br>
+
+#### S/W Solution
+
+- Stabilization Algorithm
 
 <br>
 
@@ -99,7 +113,7 @@
 
 <br>
 
-### About Algorithms
+### About Lane Fitting
 
 - Curved Line Detection with Code (with Sliding window approach) : https://www.hackster.io/kemfic/curved-lane-detection-34f771
 - About Bird's Eye View OpenCV : https://nikolasent.github.io/opencv/2017/05/07/Bird's-Eye-View-Transformation.html
