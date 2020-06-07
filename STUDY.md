@@ -122,6 +122,7 @@
 ## Optimization Reference
 
 - python 은 어떻게 동작하는가 : https://cjh5414.github.io/about-python-and-how-python-works/
+> 박기호교수님이 컴파일러 수준에서의 최적화에 대해서 이야기를 했는데, python 도 최적화가 가능한가에 대해서 의문을 가지고 찾아보게 됨. 어느 레벨에서 돌아가는 것인지.
 - Why python is slow? : http://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/
 - Raspberry pi 를 위한 Google Edge TPU : https://blog.xcoda.net/103
 > SSD MobileNet Version 이 8~10FPS 정도가 나온다고 하니 꽤나 준수하다.
