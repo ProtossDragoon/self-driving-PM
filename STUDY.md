@@ -122,7 +122,7 @@
 ## Optimization Reference
 
 - python 은 어떻게 동작하는가 : https://cjh5414.github.io/about-python-and-how-python-works/
-> 박기호교수님이 컴파일러 수준에서의 최적화에 대해서 이야기를 했는데, python 도 최적화가 가능한가에 대해서 의문을 가지고 찾아보게 됨. 어느 레벨에서 돌아가는 것인지. 검색 결과, 우리가 python 코드를 작성하고 실행하면 C 로 작성된 ```CPython``` 이 python 코드를 바이너리 코드로 바꾸어 주고, 그 바이너리 코드를 한줄씩 읽어주는 것도 그 ```CPython``` 이라고 한다. 즉, 컴파일러이면서 인터프리터 역할도 하는 것. python 코드를 C언어로 바꾸는 것이 아니라 컴파일하여 bytecode로 바꾸고 그 다음에 ```CPython``` interpreter(virtual machine)가 실행하는 것.
+> 박기호교수님이 컴파일러 수준에서의 최적화에 대해서 이야기를 했는데, python 도 최적화가 가능한가에 대해서 의문을 가지고 찾아보게 됨. 어느 레벨에서 돌아가는 것인지. 검색 결과, 우리가 python 코드를 작성하고 실행하면 C 로 작성된 ```CPython``` 이 python 코드를 바이너리 코드로 바꾸어 주고, 그 바이너리 코드를 한줄씩 읽어주는 것도 그 ```CPython``` 이라고 한다. 즉, 컴파일러이면서 인터프리터 역할도 하는 것. python 코드를 C언어로 바꾸는 것이 아니라 컴파일하여 bytecode로 바꾸고 그 다음에 ```CPython``` interpreter(virtual machine)가 실행하는 것. ```.py``` 파일을 실행하면 ```.pyc``` 라는 파일이 생성되는데 이것이 ```CPython```이 컴파일한 bytecode가 들어있는 것이다. 그 다음 ```.pyc```를 interpret 하는 것도 CPyton이다.
 - Why python is slow? : http://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/
 - Raspberry pi 를 위한 Google Edge TPU : https://blog.xcoda.net/103
 > SSD MobileNet Version 이 8~10FPS 정도가 나온다고 하니 꽤나 준수하다.
