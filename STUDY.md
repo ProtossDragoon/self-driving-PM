@@ -119,6 +119,13 @@
 
 <br>
 
+## Optimization Reference
+
+- python 은 어떻게 동작하는가 : https://cjh5414.github.io/about-python-and-how-python-works/
+- Why python is slow? : http://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/
+
+<br>
+
 ## Legacy (not used)
 
 - Single Camera Calibration : https://youtu.be/QV1a1G4lL3U
