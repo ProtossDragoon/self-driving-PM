@@ -127,7 +127,18 @@
 
 <br>
 
-### About Object Detection
+## About Object Detection
+
+<br>
+
+### Google Coral Tpu
+
+- 구글 코랄(Google Coral Series) 3편, opencv 설치 카메라 테스트 : https://m.blog.naver.com/roboholic84/221861998537
+- (나중에 잘 되면) 구글 코랄(Google Coral Series) 4편, web 기반의 스트리밍 해보기 : https://m.blog.naver.com/roboholic84/221868460335 
+- 구글 코랄(Google Coral Series) 5편, 텍스트 그리고 스트리밍 해보기 : https://m.blog.naver.com/roboholic84/221872397487
+- How to Use the Coral USB Accelerator with the Raspberry Pi :  https://www.youtube.com/watch?v=qJMwNHQNOVU
+> 보니까 google coral 에 쉽게 올릴 수 있도록 제공하나봄. 이를 이용할지 직접 만들지는 선택할 것.
+- Getting started with Google Coral’s TPU USB Accelerator : https://www.pyimagesearch.com/2019/04/22/getting-started-with-google-corals-tpu-usb-accelerator/
 
 
 <br>
