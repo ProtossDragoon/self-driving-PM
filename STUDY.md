@@ -133,6 +133,7 @@
 
 ### Google Coral Tpu
 
+- 객체인식 = 라즈베리파이 + Coral EdgeTPU (이게 제일 잘되는듯) : https://blog.xcoda.net/103
 - 구글 코랄(Google Coral Series) 3편, opencv 설치 카메라 테스트 : https://m.blog.naver.com/roboholic84/221861998537
 - (나중에 잘 되면) 구글 코랄(Google Coral Series) 4편, web 기반의 스트리밍 해보기 : https://m.blog.naver.com/roboholic84/221868460335 
 - 구글 코랄(Google Coral Series) 5편, 텍스트 그리고 스트리밍 해보기 : https://m.blog.naver.com/roboholic84/221872397487
