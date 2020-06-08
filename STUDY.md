@@ -25,7 +25,8 @@
 
 - Raspberry pi B4, 2GB RAM
 - Raspberry pi Camera module x 2
-- Arducam Raspberry pi Camera hat
+- (Canceled) Arducam Raspberry pi Camera hat
+- Google Coral TPU
 - (selection) LCD Camera
 - (selection) infrared radiation Camera module x 2
 
@@ -41,7 +42,6 @@
 - (optional) 카메라 detph mapping 하기
 - 카메라 캘리브레이션하기
 - 이미지 OIS 적용하기
-- 
 - (selection) LCD Display 연결하기
 - (selection) 적외선 Camera 에도 시도해보기
 
@@ -124,6 +124,11 @@
 > Canny 는 Gaussian 이후, Sobel 을 적용하고, 가는 엣지를 가지기 위한 Convolution 연산, 그리고 엣지 연결 기법까지 들어감. 굉장히 무거운 연산일 것이라고 생각이 들어서, 그냥 Sobel 로 처리해야 할지 Canny 를 들어야 할지 
 
 > HSV Colo Space 는 색상, 채도, 명도로 색을 구분하므로 날씨와 그림자에 따라서 Lane Detection 의 성능이 크게 달라지는 제약을 어느정도 해결 가능하다.(어두운 날씨나, 그림자와 같은)
+
+<br>
+
+### About Object Detection
+
 
 <br>
 
