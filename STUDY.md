@@ -119,6 +119,11 @@
 - About Bird's Eye View OpenCV : https://nikolasent.github.io/opencv/2017/05/07/Bird's-Eye-View-Transformation.html
 - 비슷한 프로젝트 전반에 걸쳐 : https://blog.naver.com/PostView.nhn?blogId=hirit808&logNo=221486800161&redirect=Dlog&widgetTypeCall=true&directAccess=false
 
+- Canny edge 와 Sobel edge detection 비교 : https://blog.naver.com/windowsub0406/220541314882
+> Canny 는 Gaussian 이후, Sobel 을 적용하고, 가는 엣지를 가지기 위한 Convolution 연산, 그리고 엣지 연결 기법까지 들어감. 굉장히 무거운 연산일 것이라고 생각이 들어서, 그냥 Sobel 로 처리해야 할지 Canny 를 들어야 할지 
+
+> HSV Colo Space 는 색상, 채도, 명도로 색을 구분하므로 날씨와 그림자에 따라서 Lane Detection 의 성능이 크게 달라지는 제약을 어느정도 해결 가능하다.(어두운 날씨나, 그림자와 같은)
+
 <br>
 
 ## Library Reference
