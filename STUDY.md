@@ -25,6 +25,7 @@
 
 - Raspberry pi B4, 2GB RAM
 - Raspberry pi Camera module x 2
+- Arducam Raspberry pi Camera hat
 - (selection) LCD Camera
 - (selection) infrared radiation Camera module x 2
 
