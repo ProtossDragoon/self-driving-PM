@@ -141,6 +141,12 @@
 > 보니까 google coral 에 쉽게 올릴 수 있도록 제공하나봄. 이를 이용할지 직접 만들지는 선택할 것.
 - Getting started with Google Coral’s TPU USB Accelerator : https://www.pyimagesearch.com/2019/04/22/getting-started-with-google-corals-tpu-usb-accelerator/
 
+<br>
+
+### Datasets
+
+- Cyclist Dataset : http://www.lookingatpeople.com/download-tsinghua-daimler-cyclist/index.html
+> "pedestrian", "cyclist", "motorcyclist", "tricyclist", "wheelchairuser", "mopedrider"
 
 <br>
 
