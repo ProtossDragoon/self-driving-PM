@@ -150,6 +150,19 @@
 
 <br>
 
+### Algorithms
+
+- Part 2 - How to Run TensorFlow Lite Object Detection Models on the Raspberry Pi (with Optional Coral USB Accelerator) : https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md
+- yolo v4 tensorflow light implementation : https://github.com/hunglc007/tensorflow-yolov4-tflite
+> 이게 잘 돌아가는 게 최선이긴 함.
+
+- yolo v3 tensorflow implementation : https://github.com/zzh8829/yolov3-tf2/blob/master/yolov3_tf2/models.py
+> 만약 정 안되겠다 싶으면, 직접 손수 최적화시켜줘야 할수도 있으니까. 메모
+
+
+
+<br>
+
 ## Library Reference
 
 - how to insert GUI to picamera monitor : https://raspberrypi.stackexchange.com/questions/78059/is-there-a-python-picam-gui-out-there
