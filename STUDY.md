@@ -166,15 +166,25 @@
 
 - Tensorflow Lite 공식 홈페이지 : https://www.tensorflow.org/lite
 > To use a model with TensorFlow Lite, you must convert a full TensorFlow model into the TensorFlow Lite format — you cannot create or train a model using TensorFlow Lite. So you must start with a regular TensorFlow model, and then convert the model. **Note: TensorFlow Lite supports a limited subset of TensorFlow operations, so not all models can be converted. For details, read about the TensorFlow Lite operator compatibility.** 
+
 <br>
+
 > Train a custom model : If you have designed and trained your own TensorFlow model, or you have trained a model obtained from another source, you must convert it to the TensorFlow Lite format.
+
 <br>
+
 > https://www.tensorflow.org/lite/guide/get_started#tensorflow_lite_converter : You can convert TensorFlow 2.0 models in a similar way. The converter can also be used from the command line, but the **Python API** (python 코드로 convert 하는것) is recommended.
+
 <br>
+
 > Embedded Linux is an important platform for deploying machine learning. To get started using Python to perform inference with your TensorFlow Lite models, follow the Python quickstart.To instead install the C++ library, see the build instructions for Raspberry Pi or Arm64-based boards (for boards such as Odroid C2, Pine64, and NanoPi). https://www.tensorflow.org/lite/guide/get_started#linux
+
 <br>
+
 > Note: This page shows how to compile only the C++ static library for TensorFlow Lite. Alternative install options include: install just the Python interpreter API (for inferencing only); install the full TensorFlow package from pip; or build the full TensorFlow package.
+
 <br>
+
 - Keras 모델을 TensorFlow Lite로 변환하기 : https://pythonkim.tistory.com/142
 > 엥 이게 이렇게 간단하다고..?
 - Keras 모델을 TensorFlow Lite로 변환하기 (h5 -> pb -> tflite) : http://blog.naver.com/PostView.nhn?blogId=hhj732&logNo=221691367093
