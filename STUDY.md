@@ -162,8 +162,9 @@
 
 <br>
 
-### Tensorflow Light
+### Tensorflow Lite
 
+- Tensorflow Lite 공식 홈페이지 : https://www.tensorflow.org/lite
 - Keras 모델을 TensorFlow Lite로 변환하기 : https://pythonkim.tistory.com/142
 > 엥 이게 이렇게 간단하다고..?
 - Keras 모델을 TensorFlow Lite로 변환하기 (h5 -> pb -> tflite) : http://blog.naver.com/PostView.nhn?blogId=hhj732&logNo=221691367093
