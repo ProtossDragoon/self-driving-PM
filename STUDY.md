@@ -165,6 +165,13 @@
 ### Tensorflow Lite
 
 - Tensorflow Lite 공식 홈페이지 : https://www.tensorflow.org/lite
+
+  - Important concepts : TensorFlow Lite inference typically follows the following steps:
+    - Loading a model : You must load the .tflite model into memory, which contains the model's execution graph.
+    - Transforming data : Raw input data for the model generally does not match the input data format expected by the model. For example, you might need to resize an image or change the image format to be compatible with the model.
+    - Running inference : This step involves using the TensorFlow Lite API to execute the model. It involves a few steps such as building the interpreter, and allocating tensors, as described in the following sections.
+    - Interpreting output : When you receive results from the model inference, you must interpret the tensors in a meaningful way that's useful in your application. For example, a model might return only a list of probabilities. It's up to you to map the probabilities to relevant categories and present it to your end-user.
+
 > To use a model with TensorFlow Lite, you must convert a full TensorFlow model into the TensorFlow Lite format — you cannot create or train a model using TensorFlow Lite. So you must start with a regular TensorFlow model, and then convert the model. **Note: TensorFlow Lite supports a limited subset of TensorFlow operations, so not all models can be converted. For details, read about the TensorFlow Lite operator compatibility.** 
 
 <br>
@@ -182,6 +189,7 @@
 > - For more details about the Interpreter API, read Load and run a model in Python.
 > - If you have a Raspberry Pi, try the classify_picamera.py example to perform image classification with the Pi Camera and TensorFlow Lite.
 > - If you're using a Coral ML accelerator, check out the Coral examples on GitHub.
+>   - 
 > - To convert other TensorFlow models to TensorFlow Lite, read about the the TensorFlow Lite Converter.
 
 
