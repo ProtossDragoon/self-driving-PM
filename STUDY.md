@@ -169,7 +169,8 @@
   - Important concepts : TensorFlow Lite inference typically follows the following steps:
   > Train a custom model : If you have designed and trained your own TensorFlow model, or you have trained a model obtained from another source, you must convert it to the TensorFlow Lite format.
     - Loading a model : You must load the .tflite model into memory, which contains the model's execution graph.
-    > To use a model with TensorFlow Lite, you must convert a full TensorFlow model into the TensorFlow Lite format — you cannot create or train a model using TensorFlow Lite. So you must start with a regular TensorFlow model, and then convert the model. **Note: TensorFlow Lite supports a limited subset of TensorFlow operations, so not all models can be converted. For details, read about the TensorFlow Lite operator compatibility.** 
+    > To use a model with TensorFlow Lite, you must convert a full TensorFlow model into the TensorFlow Lite format — you cannot create or train a model using TensorFlow Lite. So you must start with a regular TensorFlow model, and then convert the model. **Note: TensorFlow Lite supports a limited subset of TensorFlow operations, so not all models can be converted. For details, read about the TensorFlow Lite operator compatibility.**
+    > https://www.tensorflow.org/lite/guide/get_started#tensorflow_lite_converter : You can convert TensorFlow 2.0 models in a similar way. The converter can also be used from the command line, but the **Python API** (python 함수를 이용해서 파일을 convert 하는 방법) is recommended.
     - Transforming data : Raw input data for the model generally does not match the input data format expected by the model. For example, you might need to resize an image or change the image format to be compatible with the model.
     - Running inference : This step involves using the TensorFlow Lite API to execute the model. It involves a few steps such as building the interpreter, and allocating tensors, as described in the following sections.
     - Interpreting output : When you receive results from the model inference, you must interpret the tensors in a meaningful way that's useful in your application. For example, a model might return only a list of probabilities. It's up to you to map the probabilities to relevant categories and present it to your end-user.
@@ -178,7 +179,6 @@
 
 <br>
 
-> https://www.tensorflow.org/lite/guide/get_started#tensorflow_lite_converter : You can convert TensorFlow 2.0 models in a similar way. The converter can also be used from the command line, but the **Python API** (python 코드로 convert 하는것) is recommended.
 
 <br>
 
