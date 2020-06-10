@@ -160,6 +160,11 @@
 - yolo v3 tensorflow implementation : https://github.com/zzh8829/yolov3-tf2/blob/master/yolov3_tf2/models.py
 > 만약 정 안되겠다 싶으면, 직접 손수 최적화시켜줘야 할수도 있으니까. 메모
 
+<br>
+
+### Tensorflow Light
+
+- Keras 모델을 TensorFlow Lite로 변환하기 (h5 -> pb -> tflite) : http://blog.naver.com/PostView.nhn?blogId=hhj732&logNo=221691367093
 
 
 <br>
