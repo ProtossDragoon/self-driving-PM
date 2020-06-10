@@ -165,6 +165,7 @@
 ### Tensorflow Lite
 
 - Tensorflow Lite 공식 홈페이지 : https://www.tensorflow.org/lite
+> To use a model with TensorFlow Lite, you must convert a full TensorFlow model into the TensorFlow Lite format — you cannot create or train a model using TensorFlow Lite. So you must start with a regular TensorFlow model, and then convert the model. **Note: TensorFlow Lite supports a limited subset of TensorFlow operations, so not all models can be converted. For details, read about the TensorFlow Lite operator compatibility.**
 - Keras 모델을 TensorFlow Lite로 변환하기 : https://pythonkim.tistory.com/142
 > 엥 이게 이렇게 간단하다고..?
 - Keras 모델을 TensorFlow Lite로 변환하기 (h5 -> pb -> tflite) : http://blog.naver.com/PostView.nhn?blogId=hhj732&logNo=221691367093
