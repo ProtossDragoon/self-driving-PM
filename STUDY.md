@@ -223,7 +223,7 @@ However, you don't need to follow this whole process to create a good model for 
         - (tensorflow 2 version 은 따로 있음) [링크](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb#scrollTo=02MxhCyFmpzn)
       - Retrain an image classification model using quantization-aware training (runs in Docker)
       - Retrain an object detection model using quantization-aware training (runs in Docker)
-    - [Example Code : Image recognition with video](https://github.com/google-coral/examples-camera) : 요기 repo 의 폴더 하나가 하나의 예제임. 그중에서 오직 raspberry pi 를 위해 의도된 것은 raspcam 인 듯함. 그래서 raspcam 소스코드가 잘 동작하는지 확인해보면 될듯. install requirements 로 패키지 전부 설치해 버리니까, 가상환경 잊지말자..!
+    - [Example Code : Image recognition with video](https://github.com/google-coral/examples-camera) : 요기 repo 의 폴더 하나가 하나의 예제임. 그중에서 오직 raspberry pi 를 위해 의도된 것은 raspcam 인 듯함. 그래서 raspcam 소스코드가 잘 동작하는지 확인해보면 될듯. install requirements 에 각 폴더의 의도에 맞는 애들만 설치함. 각 코드들을 돌리려면, 다른 환경들은 미리 구성되어 있어야 함.
       > ```Raspicam``` : Python example using picamera. This is only intended for Raspberry Pi and will require a Coral USB Accelerator. Use install_requirements.sh to make sure all the dependencies are present.
 
 - (2) From Scratch
