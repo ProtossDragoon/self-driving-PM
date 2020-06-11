@@ -121,7 +121,7 @@
 
 <br>
 
-## About Lane Fitting
+## 2. About Lane Fitting
 
 - Curved Line Detection with Code (with Sliding window approach) : https://www.hackster.io/kemfic/curved-lane-detection-34f771
 - About Bird's Eye View OpenCV : https://nikolasent.github.io/opencv/2017/05/07/Bird's-Eye-View-Transformation.html
@@ -134,11 +134,22 @@
 
 <br>
 
-## About Deep Learning for Object Detection Problem
+### 2-Conclusion. Lane Fitting 
+
+- 자전거도로 중앙 노이즈에 약함
+- HLS Space 로 바꾸지 않으면, 그림자에도 굉장히 약함
+- 직선을 fitting 하는 것이 아니고, sliding window 기반이라면, 굉장히 느림
+- 처음에 가이드된 구역 안에 차선의 좌우가 모두 들어와야 인식이 가능해서 유저에게 노동을 요구함 
+- 즉, 초기 슬라이딩 윈도우 안정화가 필요하며, 카메라 각도는 흔들리면 안 되며 아주 잘 맞추어 놓아야 함.
+- 이용자에게 가이드를 제공할 수 있어야 함.
 
 <br>
 
-### Google Coral Tpu
+## 3. About Deep Learning for Object Detection Problem
+
+<br>
+
+### 3-1. Google Coral Tpu
 
 - 객체인식 = 라즈베리파이 + Coral EdgeTPU (이게 제일 잘되는듯) : https://blog.xcoda.net/103
 - 구글 코랄(Google Coral Series) 3편, opencv 설치 카메라 테스트 : https://m.blog.naver.com/roboholic84/221861998537
@@ -151,14 +162,14 @@
 
 <br>
 
-### Datasets
+### 3-2. Datasets
 
 - Cyclist Dataset : http://www.lookingatpeople.com/download-tsinghua-daimler-cyclist/index.html
 > "pedestrian", "cyclist", "motorcyclist", "tricyclist", "wheelchairuser", "mopedrider"
 
 <br>
 
-### Algorithms
+### 3-3. Algorithms
 
 - Part 2 - How to Run TensorFlow Lite Object Detection Models on the Raspberry Pi (with Optional Coral USB Accelerator) : https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md
 - yolo v4 tensorflow light implementation : https://github.com/hunglc007/tensorflow-yolov4-tflite
@@ -169,9 +180,9 @@
 
 <br>
 
-### Tensorflow Lite
+### 3-4. Tensorflow Lite & Embedding
 
-#### Tensorflow Lite 공식 홈페이지 : https://www.tensorflow.org/lite
+#### 3-4-1. Tensorflow Lite 공식 홈페이지 : https://www.tensorflow.org/lite
 
 Embedded Linux is an important platform for deploying machine learning. To get started using Python to perform inference with your TensorFlow Lite models, follow the Python quickstart.To instead install the C++ library, see the build instructions for Raspberry Pi or Arm64-based boards (for boards such as Odroid C2, Pine64, and NanoPi). https://www.tensorflow.org/lite/guide/get_started#linux 
 - This page shows how to compile only the C++ static library for TensorFlow Lite. Alternative install options include: 
