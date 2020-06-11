@@ -192,7 +192,26 @@ Embedded Linux is an important platform for deploying machine learning. To get s
       > TensorFlow Lite interpreter : The TensorFlow Lite interpreter is a library that takes a model file, executes the operations it defines on input data, and provides access to the output. The interpreter works across multiple platforms and provides a simple API for running TensorFlow Lite models from Java, Swift, Objective-C, C++, and Python.
       - [Install just the TensorFlow Lite interpreter](https://www.tensorflow.org/lite/guide/python#install_just_the_tensorflow_lite_interpreter) : 이건 기존 tensorflow full package 에도 들어있는데, ```tf.lite.Interpreter``` 만 빼가지고 설치하는 것이라고 생각하면 됨.
         > To quickly run TensorFlow Lite models with Python, you can install just the TensorFlow Lite interpreter, instead of all TensorFlow packages.This interpreter-only package is a fraction the size of the full TensorFlow package and includes the bare minimum code required to run inferences with TensorFlow Lite—it includes only the tf.lite.Interpreter Python class. This small package is ideal when all you want to do is execute .tflite models and avoid wasting disk space with the large TensorFlow library.
-      - 
+      - Optimize your model : TensorFlow Lite provides tools to optimize the size and performance of your models, often with minimal impact on accuracy. Optimized models may require slightly more complex training, conversion, or integration. TensorFlow Lite's [Model Optimization Toolkit](https://www.tensorflow.org/lite/performance/model_optimization)
+      - [Types of optimization](https://www.tensorflow.org/lite/performance/model_optimization) ~ [Post-training quantization](https://www.tensorflow.org/lite/performance/post_training_quantization)
+        - [Integer only](https://www.tensorflow.org/lite/performance/post_training_quantization#integer_only) : Creating integer only models is a common use case for TensorFlow Lite for Microcontrollers and Coral Edge TPUs.
+          > Additionally, to ensure compatibility with integer only devices (such as 8-bit microcontrollers) and accelerators (such as the Coral Edge TPU), you can enforce full integer quantization for all ops including the input and output, by using the following step
+          - Source Code : 
+```python
+import tensorflow as tf
+converter = tf.lite.TFLiteConverter.from_saved_model(saved_model_dir)
+converter.optimizations = [tf.lite.Optimize.DEFAULT]
+def representative_dataset_gen():
+  for _ in range(num_calibration_steps):
+    # Get sample input data as a numpy array in a method of your choosing.
+    yield [input]
+converter.representative_dataset = representative_dataset_gen
+converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS_INT8]
+converter.inference_input_type = tf.int8  # or tf.uint8
+converter.inference_output_type = tf.int8  # or tf.uint8
+tflite_quant_model = converter.convert()
+```
+            - 참고 : [What is the correct way to create representative dataset for TFliteconverter?](https://stackoverflow.com/questions/57877959/what-is-the-correct-way-to-create-representative-dataset-for-tfliteconverter)
     - Running inference : This step involves using the TensorFlow Lite API to execute the model. It involves a few steps such as building the interpreter, and allocating tensors, as described in the following sections.
     - Interpreting output : When you receive results from the model inference, you must interpret the tensors in a meaningful way that's useful in your application. For example, a model might return only a list of probabilities. It's up to you to map the probabilities to relevant categories and present it to your end-user.
 
