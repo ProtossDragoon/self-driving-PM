@@ -161,7 +161,7 @@
 
 - Part 2 - How to Run TensorFlow Lite Object Detection Models on the Raspberry Pi (with Optional Coral USB Accelerator) : https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md
 - yolo v4 tensorflow light implementation : https://github.com/hunglc007/tensorflow-yolov4-tflite
-> 이게 잘 돌아가는 게 최선이긴 함. 여기 [issue](https://github.com/hunglc007/tensorflow-yolov4-tflite/issues/47) 에 Did you run convert_tflite.py? The repo doesn't come with the model. I had to download the yolov4 weights and then ran the below command to generate the tflite file. Hope this helps. 이런것도 있음. 답변이 이거임 : python convert_tflite.py --weights ./data/yolov4.weights --output ./data/yolov4.tflite , 뭔가 유용하게 잘 쓸듯.
+> 이게 잘 돌아가는 게 최선이긴 함. 여기 [issue](https://github.com/hunglc007/tensorflow-yolov4-tflite/issues/47) 에 Did you run convert_tflite.py? The repo doesn't come with the model. I had to download the yolov4 weights and then ran the below command to generate the tflite file. Hope this helps. 이런것도 있음. 답변이 이거임 : python convert_tflite.py --weights ./data/yolov4.weights --output ./data/yolov4.tflite , 뭔가 유용하게 잘 쓸듯. 이걸 통해.. convert 명령을 할 때 [weight 도 함께 압축을 시키는 소스코드 구경](https://github.com/hunglc007/tensorflow-yolov4-tflite/blob/master/convert_tflite.py) 가능. 근데 진짜 하나도 모르겠다..
 
 - yolo v3 tensorflow implementation : https://github.com/zzh8829/yolov3-tf2/blob/master/yolov3_tf2/models.py
 > 만약 정 안되겠다 싶으면, 직접 손수 최적화시켜줘야 할수도 있으니까. 메모
