@@ -5,11 +5,13 @@ Could Personal Mobility Drive Automatically?
 
 ## Goal
 
-![뚝섬](README-IMG/뚝섬유원지.png)
+![뚝섬](README-IMG/뚝섬유원지.png) <br>
+https://blog.naver.com/ipting/221755870948
 
 <br>
 
-![반포](README-IMG/반포.jpg)
+![반포](README-IMG/반포.jpg) <br>
+https://blog.naver.com/verena_/221660048293
 
 <br>
 
