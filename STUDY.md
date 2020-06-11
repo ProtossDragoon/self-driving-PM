@@ -147,18 +147,6 @@
 
 ## 3. About Deep Learning for Object Detection Problem
 
-<br>
-
-### 3-1. Google Coral Tpu
-
-- 객체인식 = 라즈베리파이 + Coral EdgeTPU (이게 제일 잘되는듯) : https://blog.xcoda.net/103
-- 구글 코랄(Google Coral Series) 3편, opencv 설치 카메라 테스트 : https://m.blog.naver.com/roboholic84/221861998537
-- (나중에 잘 되면) 구글 코랄(Google Coral Series) 4편, web 기반의 스트리밍 해보기 : https://m.blog.naver.com/roboholic84/221868460335 
-- 구글 코랄(Google Coral Series) 5편, 텍스트 그리고 스트리밍 해보기 : https://m.blog.naver.com/roboholic84/221872397487
-- How to Use the Coral USB Accelerator with the Raspberry Pi :  https://www.youtube.com/watch?v=qJMwNHQNOVU
-> 보니까 google coral 에 쉽게 올릴 수 있도록 제공하나봄. 이를 이용할지 직접 만들지는 선택할 것.
-- Getting started with Google Coral’s TPU USB Accelerator : https://www.pyimagesearch.com/2019/04/22/getting-started-with-google-corals-tpu-usb-accelerator/
-- coral 공식 문서 : https://coral.ai/docs/accelerator/get-started#on-mac
 
 <br>
 
@@ -221,6 +209,19 @@ Embedded Linux is an important platform for deploying machine learning. To get s
   - 주의1 : Just change the 2 reference numbers of 2.0.0 to 2.1.0 for the wget. 뭐 이거 버젼 맞춰서 잘 해야할듯
     - https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb#scrollTo=02MxhCyFmpzn : 여기서 버젼 잘 참고할것
   - 주의2 : --
+
+<br>
+
+### 3-1. Google Coral Tpu
+
+- 객체인식 = 라즈베리파이 + Coral EdgeTPU (이게 제일 잘되는듯) : https://blog.xcoda.net/103
+- 구글 코랄(Google Coral Series) 3편, opencv 설치 카메라 테스트 : https://m.blog.naver.com/roboholic84/221861998537
+- (나중에 잘 되면) 구글 코랄(Google Coral Series) 4편, web 기반의 스트리밍 해보기 : https://m.blog.naver.com/roboholic84/221868460335 
+- 구글 코랄(Google Coral Series) 5편, 텍스트 그리고 스트리밍 해보기 : https://m.blog.naver.com/roboholic84/221872397487
+- How to Use the Coral USB Accelerator with the Raspberry Pi :  https://www.youtube.com/watch?v=qJMwNHQNOVU
+  > 보니까 google coral 에 쉽게 올릴 수 있도록 제공하나봄. 이를 이용할지 직접 만들지는 선택할 것.
+- Getting started with Google Coral’s TPU USB Accelerator : https://www.pyimagesearch.com/2019/04/22/getting-started-with-google-corals-tpu-usb-accelerator/
+- coral 공식 문서 : https://coral.ai/docs/
 
 <br>
 
