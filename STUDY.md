@@ -60,7 +60,9 @@
 
 <br>
 
-### About Calibration
+## 1. About Camera / Monitor
+
+### 1-1. About Calibration
 
 - 카메라 캘리브레이션이란 : https://darkpgmr.tistory.com/153
 - 호모그래피 좌표계란 : https://darkpgmr.tistory.com/153
@@ -68,29 +70,22 @@
 
 <br>
 
-### About Display
+### 1-2. About Stabiliation
 
-- [LCD 후보](http://www.11st.co.kr/product/SellerProductDetail.tmall?method=getSellerProductDetail&prdNo=1953092467&gclid=CjwKCAjwztL2BRATEiwAvnALcs0lYERT7KWWM5maC-BDRbgo3wr_3f1EPVtY3SYv8ehh2SMccfOWcRoCWzAQAvD_BwE&utm_term=&utm_campaign=%B1%B8%B1%DB%BC%EE%C7%CEPC+%C3%DF%B0%A1%C0%DB%BE%F7&utm_source=%B1%B8%B1%DB_PC_S_%BC%EE%C7%CE&utm_medium=%B0%CB%BB%F6)
-- [예쁜데 얘 하면 카메라 덮개 장착 가능?](https://www.cytron.io/p-5-inches-tft-touch-screen-for-rpi3-and-rpi4b)
-
-<br>
-
-### About Stabiliation
-
-#### H/W Solution
+#### 1-2-1. H/W Solution
 
 - 나날이 늘어가는 모바일의 OIS 도 하드웨어 없이는 안 됨. 단순히 소프트웨어 처리만 한 것이 아님.
 - 짐벌을 구매하는 것이 가장 현명
 
 <br>
 
-#### S/W Solution
+#### 1-2-2. S/W Solution
 
 - Stabilization Algorithm
 
 <br>
 
-### About Dual Camera
+### 1-3. About Dual Camera
 
 - Multiple Camera with the RPi4 : https://www.pyimagesearch.com/2016/01/18/multiple-cameras-with-the-raspberry-pi-and-opencv/
 - Stereo Camera hat 이라는 것이 있음 : https://www.arducam.com/product/b0195-synchronized-stereo-camera-hat-raspberry-pi/
@@ -101,7 +96,8 @@
 
 <br>
 
-**About Depth with Dual Camera** <br>
+#### 1-3-1. About Depth with Dual Camera
+
 - Example for Camera Calibration with Dual Camera + Depth Mapping with Real time : https://youtu.be/eBZm40z7E8Y
   - Guide : https://www.arducam.com/docs/cameras-for-raspberry-pi/synchronized-stereo-camera-hat/opencv-and-depth-map-on-arducam-stereo-camera-hat-tutorial/
     - Guide's Credit : https://medium.com/stereopi/opencv-and-depth-map-on-stereopi-tutorial-62cb6792bbed
@@ -115,7 +111,17 @@
 
 <br>
 
-### About Lane Fitting
+### 1-4. About Display
+
+- [LCD 후보](http://www.11st.co.kr/product/SellerProductDetail.tmall?method=getSellerProductDetail&prdNo=1953092467&gclid=CjwKCAjwztL2BRATEiwAvnALcs0lYERT7KWWM5maC-BDRbgo3wr_3f1EPVtY3SYv8ehh2SMccfOWcRoCWzAQAvD_BwE&utm_term=&utm_campaign=%B1%B8%B1%DB%BC%EE%C7%CEPC+%C3%DF%B0%A1%C0%DB%BE%F7&utm_source=%B1%B8%B1%DB_PC_S_%BC%EE%C7%CE&utm_medium=%B0%CB%BB%F6)
+- [예쁜데 얘 하면 카메라 덮개 장착 가능?](https://www.cytron.io/p-5-inches-tft-touch-screen-for-rpi3-and-rpi4b)
+
+<br>
+
+
+<br>
+
+## About Lane Fitting
 
 - Curved Line Detection with Code (with Sliding window approach) : https://www.hackster.io/kemfic/curved-lane-detection-34f771
 - About Bird's Eye View OpenCV : https://nikolasent.github.io/opencv/2017/05/07/Bird's-Eye-View-Transformation.html
@@ -128,7 +134,7 @@
 
 <br>
 
-## About Object Detection
+## About Deep Learning for Object Detection Problem
 
 <br>
 
@@ -185,12 +191,12 @@
 
 > Embedded Linux is an important platform for deploying machine learning. To get started using Python to perform inference with your TensorFlow Lite models, follow the Python quickstart.To instead install the C++ library, see the build instructions for Raspberry Pi or Arm64-based boards (for boards such as Odroid C2, Pine64, and NanoPi). https://www.tensorflow.org/lite/guide/get_started#linux 
   > This page shows how to compile only the C++ static library for TensorFlow Lite. Alternative install options include: 
-  > - install just the Python interpreter API (for inferencing only); For more details about the Interpreter API, read Load and run a model in Python.
+    - install just the Python interpreter API (for inferencing only); For more details about the Interpreter API, read Load and run a model in Python.
       - This page shows how you can start running TensorFlow Lite models with Python in just a few minutes. All you need is a TensorFlow model [converted to TensorFlow Lite.](https://www.tensorflow.org/lite/convert/) (If you don't have a model converted yet, you can experiment using the model provided with the example linked below.) : https://www.tensorflow.org/lite/convert/
       - ahahah
-  > - install the full TensorFlow package from pip; 
-  > - or build the full TensorFlow package.
-  > - 그러니까 이걸 보면, tensorflow python api 를 깔 수는 있는데, LITE 만 설치하면 lite 에서 지원하는 함수들만 사용 가능하다는 이야기를 하는 듯함. 우리는 lite 버전을 설치해야 함.
+    - install the full TensorFlow package from pip; 
+    - or build the full TensorFlow package.
+    - 그러니까 이걸 보면, tensorflow python api 를 깔 수는 있는데, LITE 만 설치하면 lite 에서 지원하는 함수들만 사용 가능하다는 이야기를 하는 듯함. 우리는 lite 버전을 설치해야 함.
   
 <br>
 
