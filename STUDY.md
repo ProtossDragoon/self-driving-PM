@@ -175,7 +175,9 @@
 Embedded Linux is an important platform for deploying machine learning. To get started using Python to perform inference with your TensorFlow Lite models, follow the Python quickstart.To instead install the C++ library, see the build instructions for Raspberry Pi or Arm64-based boards (for boards such as Odroid C2, Pine64, and NanoPi). https://www.tensorflow.org/lite/guide/get_started#linux 
 - This page shows how to compile only the C++ static library for TensorFlow Lite. Alternative install options include: 
   > 그러니까 이걸 보면, tensorflow python api 를 깔 수는 있는데, LITE 만 설치하면 lite 에서 지원하는 함수들만 사용 가능하다는 이야기를 하는 듯함. 우리는 lite 버전을 설치해야 함. 또는 바로 아래, inferencing only interpreter 만 설치하면 됨.
-  - **install just the Python interpreter API (for inferencing only); For more details about the Interpreter API, read Load and run a model in Python.**
+  - [Compile natively on Raspberry Pi](https://www.tensorflow.org/lite/guide/build_rpi#compile_natively_on_raspberry_pi)
+  - **[OR install just the Python interpreter API (for inferencing only)](https://www.tensorflow.org/lite/guide/python); For more details about the Interpreter API, read Load and run a model in Python.**
+    > If you just want to start using TensorFlow Lite to execute your models, the fastest option is to install the TensorFlow Lite runtime package. 그러니까, 우리는 어차피 runtime 전용으로만 쓸 거니까, 그냥 이걸 설치하자 이말이야.
     - This page shows how you can start running TensorFlow Lite models with Python in just a few minutes. All you need is a TensorFlow model [converted to TensorFlow Lite.](https://www.tensorflow.org/lite/convert/) (If you don't have a model converted yet, you can experiment using the model provided with the example linked below.)
     - If you have a Raspberry Pi, try the classify_picamera.py example to perform image classification with the Pi Camera and TensorFlow Lite.
     - If you're using a Coral ML accelerator, check out the Coral examples on GitHub.
