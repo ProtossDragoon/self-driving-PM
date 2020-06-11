@@ -200,28 +200,9 @@ Embedded Linux is an important platform for deploying machine learning. To get s
     - Running inference : This step involves using the TensorFlow Lite API to execute the model. It involves a few steps such as building the interpreter, and allocating tensors, as described in the following sections.
     - Interpreting output : When you receive results from the model inference, you must interpret the tensors in a meaningful way that's useful in your application. For example, a model might return only a list of probabilities. It's up to you to map the probabilities to relevant categories and present it to your end-user.
 
-
-
 <br>
 
-
-<br>
- 
-<br>
-
-> 
-> 
->   - 
-> 
-
-
-
-
-<br>
-
-- Keras 모델을 TensorFlow Lite로 변환하기 : https://pythonkim.tistory.com/142
-> 엥 이게 이렇게 간단하다고..?
-- Keras 모델을 TensorFlow Lite로 변환하기 (h5 -> pb -> tflite) : http://blog.naver.com/PostView.nhn?blogId=hhj732&logNo=221691367093
+- Tensorflow Official Object Detection Example for Raspberry pi :  https://github.com/tensorflow/examples/blob/master/lite/examples/object_detection/raspberry_pi/README.md
 
 
 <br>
