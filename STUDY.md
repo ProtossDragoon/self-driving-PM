@@ -1,5 +1,6 @@
 # 뚝섬에서 반포까지 
 
+
 ## Approach
 
 - Jetson 보드를 살 돈이 없다 (때마침 Rpi 4B 2G model, Rpi 4B 4G model, pi camera 2 개가 나한테 있다.)
