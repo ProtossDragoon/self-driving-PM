@@ -247,9 +247,14 @@ However, you don't need to follow this whole process to create a good model for 
     - **[Example Code : Image recognition with video](https://github.com/google-coral/examples-camera)** : 요기 repo 의 폴더 하나가 하나의 예제임. 그중에서 오직 raspberry pi 를 위해 의도된 것은 raspcam 인 듯함. 그래서 raspcam 소스코드가 잘 동작하는지 확인하면 될듯. install requirements 에 각 폴더의 의도에 맞는 애들만 설치함. 각 코드들을 돌리려면, 다른 환경들은 미리 구성되어 있어야 함. 대신, 영상을 대상으로 할 때에는 pygame 을 사용해서 영상을 받아들이는 것이 좋을 것 같음.
       > ```Raspicam``` : Python example using picamera. This is only intended for Raspberry Pi and will require a Coral USB Accelerator. Use install_requirements.sh to make sure all the dependencies are present.
       > **```Pygame``` : PyGame Python example using pygame to obtain camera frames. Use install_requirements.sh to make sure all the dependencies are present.**
+      
 
 - (2) From Scratch
 
+<br>
+
+**[Edge TPU Python API overview](https://coral.ai/docs/edgetpu/api-intro/#install-the-library-and-examples)**
+- **[Edge TPU simple Classification Camera Example](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/examples/python#run-the-sample)**
 
 
 
