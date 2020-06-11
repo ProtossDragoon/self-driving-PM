@@ -225,8 +225,8 @@ Embedded Linux is an important platform for deploying machine learning. To get s
 <br>
 
 However, you don't need to follow this whole process to create a good model for the Edge TPU. *뭐? 이 시팡새가 공식문서 애써 다읽고나니까 이제서야 알려주누* Instead, you can leverage existing TensorFlow models that are compatible with the Edge TPU by retraining them with your own dataset. For example, MobileNet is a popular image classification/detection model architecture that's compatible with the Edge TPU. We've created several versions of this model that you can use as a starting point to create your own model that recognizes different objects. To get started, see the next section about how to retrain an existing model with transfer learning(1). If you have designed—or plan to design—your own model architecture, then you should read the section below about model requirements(2).
-- **(1) Transfer Learning**
-  > Instead of building your own model and then training it from scratch, you can retrain an existing model that's already compatible with the Edge TPU, using a technique called transfer learning (sometimes also called "fine tuning"). Using this process, ..중략.. simply convert it to TensorFlow Lite and then compile it for the Edge TPU. And because the model architecture doesn't change during transfer learning, you know it will fully compile for the Edge TPU (assuming you start with a compatible model). If you're already familiar with transfer learning, check out our Edge TPU-compatible models that you can use as a starting point to create your own model. Just click to download "All model files" to get the TensorFlow model and pre-trained checkpoints you need to begin transfer learning. (대충 tensorflow lite 와 fully 호환되는 모델들 이미 만들어 두었으니 가져가라는 뜻.)
+- **(1) [Transfer Learning](https://coral.ai/docs/edgetpu/models-intro/#transfer-learning)**
+  > Instead of building your own model and then training it from scratch, you can retrain an existing model that's already compatible with the Edge TPU, using a technique called transfer learning (sometimes also called "fine tuning"). Using this process, ..중략.. simply convert it to TensorFlow Lite and then compile it for the Edge TPU. And because the model architecture doesn't change during transfer learning, you know it will fully compile for the Edge TPU (assuming you start with a compatible model). If you're already familiar with transfer learning, check out our Edge TPU-compatible models that you can use as a starting point to create your own model. Just click to download "All model files" to get the TensorFlow model and pre-trained checkpoints you need to begin transfer learning. (대충 tensorflow lite 와 fully 호환되는 모델들 이미 만들어 두었으니 가져가라는 뜻. 그리고 원문에 on-device 가 나오는데, image classification 에서만 적용되는 친구인 것 같으니, pass )
   - [Edge TPU-compatible models](https://coral.ai/models/)
     > You can run these models on your Coral device using our [example code.](https://coral.ai/examples/#code-examples/) (Remember to download the model's corresponding labels file.) 예제코드도 주네. 여기 detection 문제 말고도 정말 다양한 예제코드들과 모델들 있으니 이것저것 활용하면 재밌을 듯 함. alphago zero 도 있고 teachable machine 도 있음.
     - If you're new to this technique and want to quickly see some results, try the following tutorials that simplify the process to retrain a MobileNet model with new classes: 그러니까 전체 과정들을 overview 할 수 있는 코드니 참고하라고 함.
@@ -239,6 +239,14 @@ However, you don't need to follow this whole process to create a good model for 
       > ```Pygame``` : PyGame Python example using pygame to obtain camera frames. Use install_requirements.sh to make sure all the dependencies are present.
 
 - (2) From Scratch
+
+
+Currently, we offer two separate ways to perform an inference on the Edge TPU: with the Edge TPU API or with the TensorFlow Lite API.
+- [The Edge TPU API (the edgetpu module)](https://coral.ai/docs/edgetpu/api-intro/#install-the-library-and-examples) provides simple APIs that perform image classification and object detection.
+  > 이거 봤는데 진짜로 딱 classification, detection 두개 있음. 추상화 최강자. It's build on top of the TensorFlow Lite C++ API and abstracts-away a lot of the code required to handle input tensors and output tensors. The Edge TPU API also includes APIs to perform on-device transfer-learning with either weight imprinting or backpropagation. Note: The Edge TPU Python APIs for inferencing require all input tensors be uint8 format. If your model expects float inputs, then you should instead use the TensorFlow Lite API with Python. 
+- The alternative is to use the TensorFlow Lite API directly. 
+  > This requires more code in your application to process the input and output tensors, but it gives you more opportunities to customize the code for different types of model architectures. For details, instead read how to run inference using the TensorFlow Lite API with Python or with C++.
+
 
 
 <br>
