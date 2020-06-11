@@ -186,7 +186,7 @@ Embedded Linux is an important platform for deploying machine learning. To get s
   - Important concepts : TensorFlow Lite inference typically follows the following steps:
     > Train a custom model : If you have designed and trained your own TensorFlow model, or you have trained a model obtained from another source, you must convert it to the TensorFlow Lite format.
     - Loading a model : You must load the .tflite model into memory, which contains the model's execution graph.
-      > To use a model with TensorFlow Lite, you must convert a full TensorFlow model into the TensorFlow Lite format — you cannot create or train a model using TensorFlow Lite. So you must start with a regular TensorFlow model, and then convert the model. **Note: TensorFlow Lite supports a limited subset of TensorFlow operations, so not all models can be converted. For details, read about the TensorFlow Lite operator compatibility.**
+      > You cannot train a model directly with TensorFlow Lite; instead you must convert your model from a TensorFlow file (such as a .pb file) to a TensorFlow Lite file (a .tflite file), using the TensorFlow Lite converter. To use a model with TensorFlow Lite, you must convert a full TensorFlow model into the TensorFlow Lite format — you cannot create or train a model using TensorFlow Lite. So you must start with a regular TensorFlow model, and then convert the model. **Note: TensorFlow Lite supports a limited subset of TensorFlow operations, so not all models can be converted. For details, read about the TensorFlow Lite operator compatibility.**
       > https://www.tensorflow.org/lite/guide/get_started#tensorflow_lite_converter : You can convert TensorFlow 2.0 models in a similar way. The converter can also be used from the command line, but the **Python API** (python 함수를 이용해서 파일을 convert 하는 방법) is recommended.
     - Transforming data : Raw input data for the model generally does not match the input data format expected by the model. For example, you might need to resize an image or change the image format to be compatible with the model.
       > TensorFlow Lite interpreter : The TensorFlow Lite interpreter is a library that takes a model file, executes the operations it defines on input data, and provides access to the output. The interpreter works across multiple platforms and provides a simple API for running TensorFlow Lite models from Java, Swift, Objective-C, C++, and Python.
@@ -194,7 +194,7 @@ Embedded Linux is an important platform for deploying machine learning. To get s
         > To quickly run TensorFlow Lite models with Python, you can install just the TensorFlow Lite interpreter, instead of all TensorFlow packages.This interpreter-only package is a fraction the size of the full TensorFlow package and includes the bare minimum code required to run inferences with TensorFlow Lite—it includes only the tf.lite.Interpreter Python class. This small package is ideal when all you want to do is execute .tflite models and avoid wasting disk space with the large TensorFlow library.
       - Optimize your model : TensorFlow Lite provides tools to optimize the size and performance of your models, often with minimal impact on accuracy. Optimized models may require slightly more complex training, conversion, or integration. TensorFlow Lite's [Model Optimization Toolkit](https://www.tensorflow.org/lite/performance/model_optimization)
       - [Types of optimization](https://www.tensorflow.org/lite/performance/model_optimization) ~ [Post-training quantization](https://www.tensorflow.org/lite/performance/post_training_quantization)
-        > 보니까, post optimization 은 float 으로 학습시킨 모델을 추후에 바꾸는 것으로, 나중에 convert 할 때 문제가 생길 가능성이 있음. 대신, tensorflow 는 Quantization aware training 이라는 것을 진행함.
+        > 보니까, post optimization 은 float 으로 학습시킨 모델을 추후에 바꾸는 것으로, 나중에 convert 할 때 문제가 생길 가능성이 있음. 대신, tensorflow 는 Quantization aware training 이라는 것을 제공하기도 함. 어떤 것이 정확히 어떻게 영향을 미치는지는, 예제 코드를 봐야할 듯.
         - [Integer only](https://www.tensorflow.org/lite/performance/post_training_quantization#integer_only) : Creating integer only models is a common use case for TensorFlow Lite for Microcontrollers and Coral Edge TPUs. (여기 베이스 소스코드도 있음.)
           > Additionally, to ensure compatibility with integer only devices (such as 8-bit microcontrollers) and accelerators (such as the Coral Edge TPU), you can enforce full integer quantization for all ops including the input and output, by using the following step
           - 참고 : [What is the correct way to create representative dataset for TFliteconverter?](https://stackoverflow.com/questions/57877959/what-is-the-correct-way-to-create-representative-dataset-for-tfliteconverter)
@@ -204,6 +204,29 @@ Embedded Linux is an important platform for deploying machine learning. To get s
 <br>
 
 - Tensorflow Official Object Detection Example for Raspberry pi :  https://github.com/tensorflow/examples/blob/master/lite/examples/object_detection/raspberry_pi/README.md
+
+
+- how to install tensorflow 4 at raspberry pi : https://youtu.be/GNRg2P8Vqqs
+  - 주의1 : Just change the 2 reference numbers of 2.0.0 to 2.1.0 for the wget. 뭐 이거 버젼 맞춰서 잘 해야할듯
+    - https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb#scrollTo=02MxhCyFmpzn : 여기서 버젼 잘 참고할것
+  - 주의2 : --
+
+<br>
+
+However, you don't need to follow this whole process to create a good model for the Edge TPU. *뭐? 이 시팡새가 공식문서 애써 다읽고나니까 이제서야 알려주누* Instead, you can leverage existing TensorFlow models that are compatible with the Edge TPU by retraining them with your own dataset. For example, MobileNet is a popular image classification/detection model architecture that's compatible with the Edge TPU. We've created several versions of this model that you can use as a starting point to create your own model that recognizes different objects. To get started, see the next section about how to retrain an existing model with transfer learning(1). If you have designed—or plan to design—your own model architecture, then you should read the section below about model requirements(2).
+- **(1) Transfer Learning**
+  > Instead of building your own model and then training it from scratch, you can retrain an existing model that's already compatible with the Edge TPU, using a technique called transfer learning (sometimes also called "fine tuning"). Using this process, ..중략.. simply convert it to TensorFlow Lite and then compile it for the Edge TPU. And because the model architecture doesn't change during transfer learning, you know it will fully compile for the Edge TPU (assuming you start with a compatible model). If you're already familiar with transfer learning, check out our Edge TPU-compatible models that you can use as a starting point to create your own model. Just click to download "All model files" to get the TensorFlow model and pre-trained checkpoints you need to begin transfer learning. (대충 tensorflow lite 와 fully 호환되는 모델들 이미 만들어 두었으니 가져가라는 뜻.)
+  - [Edge TPU-compatible models](https://coral.ai/models/)
+    > You can run these models on your Coral device using our [example code.](https://coral.ai/examples/#code-examples/) (Remember to download the model's corresponding labels file.) 예제코드도 주네. 여기 detection 문제 말고도 정말 다양한 예제코드들과 모델들 있으니 이것저것 활용하면 재밌을 듯 함. alphago zero 도 있고 teachable machine 도 있음.
+    - If you're new to this technique and want to quickly see some results, try the following tutorials that simplify the process to retrain a MobileNet model with new classes: 그러니까 전체 과정들을 overview 할 수 있는 코드니 참고하라고 함.
+      - Retrain an image classification model using post-training quantization (runs in Google Colab)
+        - (tensorflow 2 version 은 따로 있음) [링크](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb#scrollTo=02MxhCyFmpzn)
+      - Retrain an image classification model using quantization-aware training (runs in Docker)
+      - Retrain an object detection model using quantization-aware training (runs in Docker)
+    - [Example Code : Image recognition with video](https://github.com/google-coral/examples-camera) : 요기 repo 의 폴더 하나가 하나의 예제임. 그중에서 오직 raspberry pi 를 위해 의도된 것은 raspcam 인 듯함. 그래서 raspcam 소스코드가 잘 동작하는지 확인해보면 될듯. install requirements 로 패키지 전부 설치해 버리니까, 가상환경 잊지말자..!
+      > ```Raspicam``` : Python example using picamera. This is only intended for Raspberry Pi and will require a Coral USB Accelerator. Use install_requirements.sh to make sure all the dependencies are present.
+
+- (2) From Scratch
 
 
 <br>
