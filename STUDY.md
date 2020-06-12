@@ -212,6 +212,10 @@ Embedded Linux is an important platform for deploying machine learning. To get s
     - https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb#scrollTo=02MxhCyFmpzn : 여기서 버젼 잘 참고할것
   - 주의2 : --
 
+
+- **아주 좋은 예제코드** : https://www.tensorflow.org/model_optimization/guide/quantization/training_example
+- **추가 정보** : google cofal; tf 2.0 은 아직 제대로 지원 안하고, tf.1.5 이상만 제대로 지원함
+
 <br>
 
 ### 3-1. Google Coral Tpu
