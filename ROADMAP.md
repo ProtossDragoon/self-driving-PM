@@ -11,3 +11,12 @@
   - 공유기 ip : 192.168.35.1
   - rpi 4B 4G model : 192.168.35.78, 2100번포트
   - rpi 4B 2G model : 192.168.35.210, 2101번포트
+
+
+```
+echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+
+sudo apt-get update
+```
