@@ -12,6 +12,9 @@
   - rpi 4B 4G model : 192.168.35.78, 2100번포트
   - rpi 4B 2G model : 192.168.35.210, 2101번포트
 
+<br>
+
+## Coral
 
 ```
 echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
@@ -20,3 +23,13 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 sudo apt-get update
 ```
+
+- USB 가 꽂혀 있으면 우선 다시 뽑아야 함
+- 이미 꽂힌 채로 아래 커맨드를 수행할 시 제거 후 재설치
+- 아래 커맨드는 둘 중 하나 선택.
+
+```
+sudo apt-get install libedgetpu1-std
+sudo apt-get install libedgetpu1-max
+```
+
