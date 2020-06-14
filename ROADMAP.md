@@ -33,6 +33,8 @@ sudo apt-get install libedgetpu1-std
 sudo apt-get install libedgetpu1-max
 ```
 
+<br>
+
 ## Virtual Env
 
 - (가상환경 참고)[https://jamanbbo.tistory.com/45]
@@ -53,6 +55,7 @@ source bin/activate
 pip3 list
 ```
 
+<br>
 
 ### (virtualenv) install tf1.15
 
@@ -72,6 +75,8 @@ pip3 list
 // sudo pip install 명령어 사용시, 전역에 깔려버림.
 ```
 
+<br>
+
 ### (virtualenv) install tflite runtime interpreter and Run Demo
 
 - [참고](https://www.tensorflow.org/lite/guide/python)
@@ -89,3 +94,9 @@ pip3 list
 (tfliteinter_env) bash install_requirements.sh
 (tfliteinter_env) python3 classify_image.py --model models/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite --labels models/inat_bird_labels.txt --input images/parrot.jpg
 ```
+
+<br>
+
+### 내가 읽어야 할 코드
+
+https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb#scrollTo=TaX0smDP7xQY
