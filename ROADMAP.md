@@ -112,3 +112,9 @@ https://colab.research.google.com/github/google-coral/tutorials/blob/master/retr
 - 위에 코랩 저거 소스코드에, 내가 만들었던 CAM 합쳐가지고 보여주는 게 더 이펙트있을듯.
 - 그리고 그거 가져다가 CAM 소스코드 붙이자.
 - 시간 남으면 자전거탄사람 뒷모습 구글에서 클롤링해다가 가져다붙이면 될듯.
+
+
+### 그리고
+
+- 멀티코어가 가능할까?
+- A 프로세스에서 매 프레임마다 전역변수 읽는데, fork 된 B프로세스...
