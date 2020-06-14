@@ -72,11 +72,20 @@ pip3 list
 // sudo pip install 명령어 사용시, 전역에 깔려버림.
 ```
 
-### (virtualenv) install tflite runtime interpreter
+### (virtualenv) install tflite runtime interpreter and Run Demo
 
 - [참고](https://www.tensorflow.org/lite/guide/python)
+- [데모 참고](https://coral.ai/docs/accelerator/get-started/#3-run-a-model-using-the-tensorflow-lite-api)
 
 ```
 (tfliteinter_env) pip install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_armv7l.whl
 
+```
+
+```
+(tfliteinter_env) mkdir coral && cd coral
+(tfliteinter_env) git clone https://github.com/google-coral/tflite.git
+(tfliteinter_env) cd tflite/python/examples/classification
+(tfliteinter_env) bash install_requirements.sh
+(tfliteinter_env) python3 classify_image.py --model models/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite --labels models/inat_bird_labels.txt --input images/parrot.jpg
 ```
