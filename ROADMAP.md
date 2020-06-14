@@ -69,5 +69,7 @@ pip3 list
 (tffull_env) sudo pip3 wheel mock
 (tffull_env) sudo pip3 wheel wheel
 (tffull_env) sudo pip3 install tensorflow-1.15.2-cp37-cp37m-linux_armv7l.whl
+
+// ㅅㅂ 이렇게 해도 전역에깔리네
 ```
 
