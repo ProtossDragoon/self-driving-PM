@@ -35,22 +35,39 @@ sudo apt-get install libedgetpu1-max
 
 ## Virtual Env
 
-- (가상환경 참고1)[http://raspberrypi-aa.github.io/session4/venv.html], (가상환경 참고2)[https://dgkim5360.tistory.com/entry/python-virtualenv-on-linux-ubuntu-and-windows]
+- (가상환경 참고)[https://jamanbbo.tistory.com/45]
 
 ```
 pip3 list
-sudo pip3 install virtualenv
 
-python3 virtualenv tflite_env
-python3 virtualenv tf2_env
+// python 에서 기본으로 제공하는 virtualenv
+
+python3 -m venv ./tffull_env
+python3 -m venv ./tf2_env
+python3 -m venv ./tfliteinter_env
 ```
 
 ```
-cd tflite_env
+cd tffull_env
 source bin/activate
 pip3 list
 ```
 
-- 
 
+## (virtualenv)install tf1.15
+
+- tf1.15 is latest version of tensorflow
+- tf1.15 만 coral 을 지원함.
+- 하지만 pip 를 통한 간단한 install 을 linux 에서 지원하지 않음
+- 따라서 [이 링크를 참고](https://qengineering.eu/install-tensorflow-1.15.2-on-raspberry-pi-4.html)
+
+```
+(tffull_env) sudo apt-get install libhdf5-dev libc-ares-dev libeigen3-dev
+(tffull_env) sudo apt-get install libatlas-base-dev libatlas3-base
+(tffull_env) sudo pip3 install h5py
+(tffull_env) sudo pip3 install six 
+(tffull_env) sudo pip3 wheel mock
+(tffull_env) sudo pip3 wheel wheel
+(tffull_env) sudo pip3 install tensorflow-1.15.2-cp37-cp37m-linux_armv7l.whl
+```
 
