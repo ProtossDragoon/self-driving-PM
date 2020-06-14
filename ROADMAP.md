@@ -33,3 +33,24 @@ sudo apt-get install libedgetpu1-std
 sudo apt-get install libedgetpu1-max
 ```
 
+## Virtual Env
+
+- (가상환경 참고1)[http://raspberrypi-aa.github.io/session4/venv.html], (가상환경 참고2)[https://dgkim5360.tistory.com/entry/python-virtualenv-on-linux-ubuntu-and-windows]
+
+```
+pip3 list
+sudo pip3 install virtualenv
+
+python3 virtualenv tflite_env
+python3 virtualenv tf2_env
+```
+
+```
+cd tflite_env
+source bin/activate
+pip3 list
+```
+
+- 
+
+
