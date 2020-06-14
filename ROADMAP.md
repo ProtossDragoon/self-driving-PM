@@ -54,7 +54,7 @@ pip3 list
 ```
 
 
-## (virtualenv)install tf1.15
+### (virtualenv) install tf1.15
 
 - tf1.15 is latest version of tensorflow
 - tf1.15 만 coral 을 지원함.
@@ -72,3 +72,11 @@ pip3 list
 // sudo pip install 명령어 사용시, 전역에 깔려버림.
 ```
 
+### (virtualenv) install tflite runtime interpreter
+
+- [참고](https://www.tensorflow.org/lite/guide/python)
+
+```
+(tfliteinter_env) pip install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_armv7l.whl
+
+```
