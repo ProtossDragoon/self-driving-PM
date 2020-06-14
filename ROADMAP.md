@@ -37,7 +37,7 @@ sudo apt-get install libedgetpu1-max
 
 ## Virtual Env
 
-- (가상환경 참고)[https://jamanbbo.tistory.com/45]
+- [가상환경 참고](https://jamanbbo.tistory.com/45)
 
 ```
 pip3 list
