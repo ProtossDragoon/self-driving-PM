@@ -100,3 +100,15 @@ pip3 list
 ### 내가 읽어야 할 코드
 
 https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb#scrollTo=TaX0smDP7xQY
+
+
+<br>
+
+
+### Dataset
+
+- 또 그거 언제 학습시키지..
+- 일단 COCO 데이터셋으로 학습된 애 가져다가 한번 인터프리터로 테스트 해보자.
+- 위에 코랩 저거 소스코드에, 내가 만들었던 CAM 합쳐가지고 보여주는 게 더 이펙트있을듯.
+- 그리고 그거 가져다가 CAM 소스코드 붙이자.
+- 시간 남으면 자전거탄사람 뒷모습 구글에서 클롤링해다가 가져다붙이면 될듯.
