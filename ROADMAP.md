@@ -64,12 +64,11 @@ pip3 list
 ```
 (tffull_env) sudo apt-get install libhdf5-dev libc-ares-dev libeigen3-dev
 (tffull_env) sudo apt-get install libatlas-base-dev libatlas3-base
-(tffull_env) sudo pip3 install h5py
-(tffull_env) sudo pip3 install six 
-(tffull_env) sudo pip3 wheel mock
-(tffull_env) sudo pip3 wheel wheel
-(tffull_env) sudo pip3 install tensorflow-1.15.2-cp37-cp37m-linux_armv7l.whl
-
-// ㅅㅂ 이렇게 해도 전역에깔리네
+(tffull_env) pip install h5py
+(tffull_env) pip install six 
+(tffull_env) pip wheel mock
+(tffull_env) pip wheel wheel
+(tffull_env) pip install tensorflow-1.15.2-cp37-cp37m-linux_armv7l.whl
+// sudo pip install 명령어 사용시, 전역에 깔려버림.
 ```
 
