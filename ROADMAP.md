@@ -8,9 +8,21 @@
 - [라즈베리파이 내부 고정 ip 설정](https://www.sagein.net/655)
   - [공유기 설정창](https://pastimelife.com/1554) : PASS : 2164AD_admin (*해킹하지말아주세요 ㅜㅜ*)
   - [공유기에서 고정하기](https://rottk.tistory.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-IP-%EA%B3%A0%EC%A0%95%ED%95%98%EA%B8%B0)
-  - 공유기 ip : 192.168.35.1
-  - rpi 4B 4G model : 192.168.35.78, 2100번포트
-  - rpi 4B 2G model : 192.168.35.210, 2101번포트
+
+<br>
+
+### Putty and others
+
+- 공유기 내부 ip : 192.168.35.1
+- rpi 4B 4G model : 192.168.35.78, 2100번포트
+- rpi 4B 2G model : 192.168.35.210, 2101번포트
+- install X11
+- putty + port : localhost:0
+- run GUI for linux
+
+```
+lxsession
+```
 
 <br>
 
@@ -96,6 +108,34 @@ pip3 list
 ```
 
 <br>
+
+- [데모 github](https://github.com/google-coral/examples-camera)
+
+```
+(tfliteinter_env) mkdir examples-camera-original
+(tfliteinter_env) cd examples-camera-original
+(tfliteinter_env) cd examples-camera
+(tfliteinter_env) git clone https://github.com/google-coral/examples-camera
+(tfliteinter_env) sh download_models.sh
+(tfliteinter_env) cd pygame
+(tfliteinter_env) bash install_requirements.sh
+```
+
+만약 이렇게 했는데 pygame 이 설치가 안 된 경우, (pip list 를 통해 확인)
+
+```
+(tfliteinter_env) pip3 install pygame
+```
+
+<br>
+데모 실행
+
+
+```
+(tfliteinter_env) python3 detect.py
+```
+<br>
+
 
 ### 내가 읽어야 할 코드
 
