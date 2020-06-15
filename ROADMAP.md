@@ -113,8 +113,15 @@ https://colab.research.google.com/github/google-coral/tutorials/blob/master/retr
 - 그리고 그거 가져다가 CAM 소스코드 붙이자.
 - 시간 남으면 자전거탄사람 뒷모습 구글에서 클롤링해다가 가져다붙이면 될듯.
 
+<br>
 
 ### 그리고
 
 - 멀티코어가 가능할까?
 - A 프로세스에서 매 프레임마다 전역변수 읽는데, fork 된 B프로세스...
+
+<br>
+
+### Calibration
+
+- [카메라 캘리브레이션, camera parameter 구하는 source code](https://nikatsanka.github.io/camera-calibration-using-opencv-and-python.html)
