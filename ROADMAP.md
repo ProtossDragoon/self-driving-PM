@@ -122,6 +122,14 @@ https://colab.research.google.com/github/google-coral/tutorials/blob/master/retr
 
 <br>
 
+## Camera
+
+- 캘리브레이션
+  - 카메라 파라미터 구하기
+  - 카메라 파라미터 적용하기
+
+<br>
+
 ### Calibration
 
 - [카메라 캘리브레이션, camera parameter 구하는 source code](https://nikatsanka.github.io/camera-calibration-using-opencv-and-python.html)
