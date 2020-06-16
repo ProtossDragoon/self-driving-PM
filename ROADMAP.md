@@ -136,6 +136,16 @@ pip3 list
 ```
 <br>
 
+### (virtualenv)
+
+- 이제 (CAM 을 돌려보자)[https://github.com/ProtossDragoon/self-driving-PM.git]
+
+해당 github 는
+- resize 의 편의를 위해 window 의 모양이 정방형입니다.
+
+
+
+<br>
 
 ### 내가 읽어야 할 코드
 
@@ -143,6 +153,7 @@ https://colab.research.google.com/github/google-coral/tutorials/blob/master/retr
 
 
 <br>
+
 
 
 ### Dataset
