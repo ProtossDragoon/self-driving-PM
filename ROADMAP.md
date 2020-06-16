@@ -119,7 +119,7 @@ sudo /etc/init.d/dphys-swapfile restart
 
 ```
 cd ~/Desktop/tfliteinter_env/lib/python3.7/site-packages
-~/Desktop/tfliteinter_env/lib/python3.7/site-packages$ ln -s /usr/local/lib/python3.7/site-packages/cv2/python-3.7/cv2.cpython-37m-arm-linux-gnueabihf.so cv2.so
+~/Desktop/tfliteinter_env/lib/python3.7/site-packages$ ln -s /usr/local/lib/python3.7/dist-packages/cv2/python-3.7/cv2.cpython-37m-arm-linux-gnueabihf.so cv2.so
 ```
 
 
