@@ -109,6 +109,7 @@ sudo ldconfig
 
 ```
 sudo vim /etc/dphys-swapfile
+sudo /etc/init.d/dphys-swapfile restart
 ```
 
 - 하지만, 이것은 전역에 설치된 것일 뿐 가상환경에 넣어줘야 함. OpenCV 4를 Python 3 가상 환경에 복사(소프트링크)
