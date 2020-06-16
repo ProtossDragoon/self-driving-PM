@@ -138,10 +138,12 @@ pip3 list
 
 ### (virtualenv)
 
-- 이제 (CAM 을 돌려보자)[https://github.com/ProtossDragoon/self-driving-PM.git]
+- [이제 CAM 을 돌려보자](https://github.com/ProtossDragoon/self-driving-PM.git
 
-해당 github 는
-- resize 의 편의를 위해 window 의 모양이 정방형입니다.
+해당 repo 는 original repo 와 다르게
+- resize 의 편의를 위해 window 의 모양을 정방형으로 수정함.
+- 라즈베리파이 4B 에 맞춰, 카메라를 기본 연결 카메라 [0] 번 카메라로 수정함.
+- setting 이 custom 폴더로 잡혀있음.
 
 
 
