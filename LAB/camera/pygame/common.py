@@ -47,8 +47,8 @@ def output_tensor(interpreter, i, dense_layer_weight, scaling = False):
         return output_activation
     scale, zero_point = output_details['quantization']
 
+    CAM = np.zeros(dtype=np.float32, shape=output_activation.shape[0:2])
     if scaling == True :
-        CAM = np.zeros(dtype=np.float32, shape=output_activation.shape[0:2])
         if scale == 0:
             for index, weight in enumerate(dense_layer_weight[:,0]):
                 CAM += weight * output_activation[:, :, index]
@@ -58,7 +58,6 @@ def output_tensor(interpreter, i, dense_layer_weight, scaling = False):
                 CAM += (weight * scale * (output_activation[:, :, index] - zero_point))
             return CAM
     else :
-        CAM = np.zeros(dtype=np.uint8, shape=output_activation.shape[0:2])
         for index, weight in enumerate(dense_layer_weight[:, 0]):  # 0 instead of image_class. because 1 is Noobj
             CAM += weight * output_activation[:, :, index]
         return CAM
