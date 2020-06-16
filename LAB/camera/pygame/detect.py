@@ -123,7 +123,7 @@ def main():
     # print('Loading {} with {} labels.'.format(args.model, args.labels))
 
     # interpreter = common.make_interpreter(args.model)
-    interpreter = common.make_interpreter(os.path.join((custom_model_dir, custom_model)))
+    interpreter = common.make_interpreter(os.path.join(custom_model_dir, custom_model))
     interpreter.allocate_tensors()
     # labels = load_labels(args.labels)
 
