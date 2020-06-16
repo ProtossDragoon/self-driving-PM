@@ -91,7 +91,7 @@ def get_output_CAM(interpreter, dense_layer_weight, cam_w, cam_h) :
 
 
 def main():
-    cam_w, cam_h = 480, 480
+    cam_w, cam_h = 224*5, 224*5
     default_model_dir = '../all_models'
     default_model = 'mobilenet_ssd_v2_coco_quant_postprocess_edgetpu.tflite'
     default_labels = 'coco_labels.txt'
