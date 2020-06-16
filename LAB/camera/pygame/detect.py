@@ -181,7 +181,8 @@ def main():
             print(annotate_text)
             mysurface.blit(text, (0, 0))
             '''
-            display.blit(mysurface, (0, 0))
+            cam_surface = pygame.surfarray.make_surface(results)
+            display.blit(cam_surface, (0, 0))
             pygame.display.flip()
     finally:
         camera.stop()
