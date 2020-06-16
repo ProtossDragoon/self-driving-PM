@@ -84,11 +84,8 @@ def get_output_CAM(interpreter, dense_layer_weight, cam_w, cam_h) :
     if scaling == True :
         pass
     else :
-        CAM = cv2.resize(CAM, (224, 224))
+        CAM = cv2.resize(CAM, (224, 224)) # 이거 한 번 하자고 cv2 부르니..?
         return CAM
-
-
-
 
 
 
