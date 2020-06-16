@@ -71,7 +71,7 @@ def get_output(interpreter, score_threshold, top_k, image_scale=1.0):
     return [make(i) for i in range(top_k) if scores[i] >= score_threshold]
 
 def main():
-    cam_w, cam_h = 640, 480
+    cam_w, cam_h = 480, 480
     default_model_dir = '../all_models'
     default_model = 'mobilenet_ssd_v2_coco_quant_postprocess_edgetpu.tflite'
     default_labels = 'coco_labels.txt'
@@ -105,8 +105,9 @@ def main():
 
     w, h, _ = common.input_image_size(interpreter)
 
-    print('By default using camera: ', camlist[-1])
-    camera = pygame.camera.Camera(camlist[-1], (cam_w, cam_h))
+    print('camera list : ', camlist)
+    print('By default using camera: ', camlist[0])
+    camera = pygame.camera.Camera(camlist[0], (cam_w, cam_h))
     try:
       display = pygame.display.set_mode((cam_w, cam_h), 0)
     except pygame.error as e:
