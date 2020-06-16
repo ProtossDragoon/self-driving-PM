@@ -37,13 +37,30 @@ def input_tensor(interpreter):
     tensor_index = interpreter.get_input_details()[0]['index']
     return interpreter.tensor(tensor_index)()[0]
 
-def output_tensor(interpreter, i):
+def output_tensor(interpreter, i, dense_layer_weight, scaling = False):
     """Returns dequantized output tensor if quantized before."""
     output_details = interpreter.get_output_details()[i]
-    output_data = np.squeeze(interpreter.tensor(output_details['index'])())
+    output_activation = np.squeeze(interpreter.tensor(output_details['index'])())
+    print('final convoltuion tensor :', output_activation.shape)
+
     if 'quantization' not in output_details:
-        return output_data
+        return output_activation
     scale, zero_point = output_details['quantization']
-    if scale == 0:
-        return output_data - zero_point
-    return scale * (output_data - zero_point)
+
+    if scaling == True :
+        CAM = np.zeros(dtype=np.float32, shape=output_activation.shape[0:2])
+        if scale == 0:
+            for index, weight in enumerate(dense_layer_weight[:,0]):
+                CAM += weight * output_activation[:, :, index]
+            return CAM
+        else :
+            for index, weight in enumerate(dense_layer_weight[:,0]):
+                CAM += (weight * scale * (output_activation[:, :, index] - zero_point))
+            return CAM
+    else :
+        CAM = np.zeros(dtype=np.uint8, shape=output_activation.shape[0:2])
+        for index, weight in enumerate(dense_layer_weight[:, 0]):  # 0 instead of image_class. because 1 is Noobj
+            CAM += weight * output_activation[:, :, index]
+        return CAM
+
+
