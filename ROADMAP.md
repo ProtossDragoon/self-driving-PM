@@ -26,6 +26,103 @@ lxsession
 
 <br>
 
+## openCV
+
+- [설치 과정은 이 게시글을 참고함](https://make.e4ds.com/make/learn_guide_view.asp?idx=116)
+- [이 게시글도 참고함](https://bluexmas.tistory.com/964)
+
+```
+sudo apt-get install build-essential
+sudo apt-get install cmake
+
+// 특정 포멧의 이미지 파일을 Read, Write 하기 위한 필요 패키지 설치
+sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+
+// 특정 코덱의 비디오 파일을 Read, Write 하기 위한 필요 패키지 설치
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev
+
+// Video4Linux  리눅스에서 실시간 비디오 캡처 및 비디오 디바이스 제어를 위한 API 패키지 설치
+sudo apt-get install libv4l-dev v4l-utils
+
+// GStreamer는 리눅스 기반에서 영상 스트리밍을 쉽게 처리할 수 있더록 만든 오픈 소스 프레임워크 이다.
+sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+
+// OpenCV에서 윈도우 생성 등의 GUI를 위해 gtk 또는 qt를 선택해서 사용가능하며 여기서는 gtk2를 지정해준다.
+sudo apt-get install libgtk2.0-dev
+
+// OpenGL 지원하기 위해 필요한 라이브러리 설치
+sudo apt-get install mesa-utils libgl1-mesa-dri libgtkgl2.0-dev libgtkglext1-dev
+
+// OpenCV 최적화를 위해 사용되는 라이브러리 설치
+sudo apt-get install libatlas-base-dev gfortran libeigen3-dev
+
+// python 패키지는 OpenCV-Python 바인딩을 위한 패키지이며, Numpy는 매트릭스 연산등을 빠르게 처리할 수 있다. 
+// 물론 이미 설치되어 있음.
+sudo apt-get install python3-dev python3-numpy
+
+```
+
+- 아 개오바다 이거 언제 다 설치하냐?
+
+
+```
+~/Desktop$ mkdir opencvtemp
+~/Desktop$ cd opencvtemp
+
+wget -O opencv.zip https://github.com/opencv/opencv/archive/**4.1.2.zip**
+unzip opencv.zip
+
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.1.2.zip
+unzip opencv_contrib.zip
+
+
+~/Desktop/opencvtemp/$ cd opencv-4.1.2
+~/Desktop/opencvtemp/opencv-4.1.2$ mkdir build
+~/Desktop/opencvtemp/opencv-4.1.2$ cd build
+
+~/Desktop/opencvtemp/opencv-4.1.2/build$ 
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local  -D WITH_TBB=OFF -D WITH_IPP=OFF -D WITH_1394=OFF -D BUILD_WITH_DEBUG_INFO=OFF -D BUILD_DOCS=OFF -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D ENABLE_NEON=ON -D ENABLE_VFPV3=ON -D WITH_QT=OFF -D WITH_GTK=ON -D WITH_OPENGL=ON -D OPENCV_ENABLE_NONFREE=ON -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.1.2/modules -D WITH_V4L=ON -D WITH_FFMPEG=ON -D WITH_XINE=ON -D ENABLE_PRECOMPILED_HEADERS=OFF -D BUILD_NEW_PYTHON_SUPPORT=ON -D OPENCV_GENERATE_PKGCONFIG=ON ../
+
+```
+
+```
+// 컴파일 시 메모리 부족으로 에러가 나지 않도록 swap 공간을 늘려줘야 한다.
+
+// /etc/dphys-swapfile 파일을 연다
+~/Desktop/opencvtemp/opencv-4.1.2/build $ sudo vim /etc/dphys-swapfile
+
+// 변경
+CONF_SWAPSIZE=2048
+
+// swap을 재시작하여 변경된 설정값을 반영해준다.
+sudo /etc/init.d/dphys-swapfile restart
+
+
+~/Desktop/opencvtemp/opencv-4.1.2/build $ make -j4
+
+sudo make install
+sudo ldconfig
+```
+
+- 자 이제 여기까지 했으면 이제 import cv2 가 작동된다.
+- CONF_SWAPSIZE를 100MB로 재설정,  스왑 서비스를 재시작
+
+```
+sudo vim /etc/dphys-swapfile
+sudo /etc/init.d/dphys-swapfile restart
+```
+
+- 하지만, 이것은 전역에 설치된 것일 뿐 가상환경에 넣어줘야 함. OpenCV 4를 Python 3 가상 환경에 복사(소프트링크)
+- 소프트링크 옵션 (-s)
+- 원본 파일 위치 /usr/local/lib/python3.7/site-packages/cv2/python-3.7/cv2.cpython-37m-arm-linux-gnueabihf.so
+- 복사할 이름 cv2.so
+
+```
+cd ~/Desktop/tfliteinter_env/lib/python3.7/site-packages
+~/Desktop/tfliteinter_env/lib/python3.7/site-packages$ ln -s /usr/local/lib/python3.7/site-packages/cv2/python-3.7/cv2.cpython-37m-arm-linux-gnueabihf.so cv2.so
+```
+
+
 ## Coral
 
 ```
