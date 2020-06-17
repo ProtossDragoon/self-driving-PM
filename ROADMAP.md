@@ -9,6 +9,14 @@
   - [공유기 설정창](https://pastimelife.com/1554) : PASS : 2164AD_admin (*해킹하지말아주세요 ㅜㅜ*)
   - [공유기에서 고정하기](https://rottk.tistory.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-IP-%EA%B3%A0%EC%A0%95%ED%95%98%EA%B8%B0)
 
+
+- 유선으로 하면 잘 되는데 와이파이로 걸었다 하면 종종 끊기는 문제
+
+'''
+sudo rfkill list
+sudo rfkill unblock
+'''
+
 <br>
 
 ### Putty and others
