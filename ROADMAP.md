@@ -28,9 +28,9 @@ sudo rfkill unblock
 - putty + port : localhost:0
 - run GUI for linux
 
-```
+'''
 lxsession
-```
+'''
 
 <br>
 
@@ -38,6 +38,9 @@ lxsession
 
 - [설치 과정은 이 게시글을 참고함](https://make.e4ds.com/make/learn_guide_view.asp?idx=116)
 - [이 게시글도 참고함](https://bluexmas.tistory.com/964)
+- 임베디드시스템 박기호 교수님강의자료 참고함
+
+<br>
 
 ```
 sudo apt-get install build-essential
