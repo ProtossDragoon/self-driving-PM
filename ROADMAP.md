@@ -294,3 +294,21 @@ https://colab.research.google.com/github/google-coral/tutorials/blob/master/retr
 ### Calibration
 
 - [카메라 캘리브레이션, camera parameter 구하는 source code](https://nikatsanka.github.io/camera-calibration-using-opencv-and-python.html)
+
+
+<br>
+
+### 프로젝트 1차 마무리
+
+- 킹기호 교수님 임베디드시스템 과목 A+ 로 장렬히 마무리. 감사합니다.
+
+<br>
+
+### 프로젝트 2차 시작
+
+- open source contribute tone 신청
+- 자기소개 *(분량 제한 없음)
+- 지원동기 *(분량 제한 없음)
+- 프로그램 개발 경험 *(경험이 있을 경우 어떤 프로그램이었는지 200자 내외로 작성)
+
+<br>
