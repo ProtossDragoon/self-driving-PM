@@ -306,7 +306,7 @@ https://colab.research.google.com/github/google-coral/tutorials/blob/master/retr
 
 ### 프로젝트 2차 시작
 
-- open source contribute tone 신청
+- [open source contribute tone](https://www.oss.kr/) 신청
 - 자기소개 *(분량 제한 없음)
 - 지원동기 *(분량 제한 없음)
 - 프로그램 개발 경험 *(경험이 있을 경우 어떤 프로그램이었는지 200자 내외로 작성)
