@@ -21,6 +21,10 @@ https://blog.naver.com/verena_/221660048293
 
 <br>
 
+- 경로에 다리(bridge) 가 존재해서 큰 환경 변화를 감당해야 한다.
+
+<br>
+
 ### Course 2 : 청담 > 반포 (난이도 중하)
 
 ![청담반포](README-IMG/청담반포2.png)
