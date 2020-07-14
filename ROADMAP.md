@@ -24,7 +24,7 @@ sudo rfkill unblock
 - 공유기 내부 ip : 192.168.35.1
 - rpi 4B 4G model : 192.168.35.78, 2100번포트
 - rpi 4B 2G model : 192.168.35.210, 2101번포트
-- install X11
+- install X11 *X11 을 사용해서 영상을 보여주는 경우, 심한 frame drop 이 존재했기에, X11 을 사용하지 않고 LCD 모니터를 구매해야 한다는 결론*
 - putty + port : localhost:0
 - run GUI for linux
 
