@@ -260,7 +260,8 @@ pip3 list
 
 ### CAM 을 학습시키는데 참고한 소스코드
 
-https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb#scrollTo=TaX0smDP7xQY
+- https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb#scrollTo=TaX0smDP7xQY
+- [결과 source code](https://colab.research.google.com/drive/1ECEW3Yq4DRWBAkPOO1x7tasLNsRQKTFl?usp=sharing)
 
 
 <br>
