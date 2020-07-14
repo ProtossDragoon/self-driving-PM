@@ -246,33 +246,22 @@ pip3 list
 
 ### (virtualenv)
 
-- [이제 CAM 을 돌려보자](https://github.com/ProtossDragoon/self-driving-PM.git
+- [이제 CAM 을 돌려보자](https://github.com/ProtossDragoon/self-driving-PM.git)
 
 해당 repo 는 original repo 와 다르게
 - resize 의 편의를 위해 window 의 모양을 정방형으로 수정함.
 - 라즈베리파이 4B 에 맞춰, 카메라를 기본 연결 카메라 [0] 번 카메라로 수정함.
 - setting 이 custom 폴더로 잡혀있음.
+- custom 폴더에는 직접 수집한 cyclist & kickboarder data 로 학습시킨 tflite 모델이 포함되어 있음. (성능이 그렇게 좋지는 않음)
 
 
 
 <br>
 
-### 내가 읽어야 할 코드
+### CAM 을 학습시키는데 참고한 소스코드
 
 https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb#scrollTo=TaX0smDP7xQY
 
-
-<br>
-
-
-
-### Dataset
-
-- 또 그거 언제 학습시키지..
-- 일단 COCO 데이터셋으로 학습된 애 가져다가 한번 인터프리터로 테스트 해보자.
-- 위에 코랩 저거 소스코드에, 내가 만들었던 CAM 합쳐가지고 보여주는 게 더 이펙트있을듯.
-- 그리고 그거 가져다가 CAM 소스코드 붙이자.
-- 시간 남으면 자전거탄사람 뒷모습 구글에서 클롤링해다가 가져다붙이면 될듯.
 
 <br>
 
@@ -294,7 +283,7 @@ https://colab.research.google.com/github/google-coral/tutorials/blob/master/retr
 ### Calibration
 
 - [카메라 캘리브레이션, camera parameter 구하는 source code](https://nikatsanka.github.io/camera-calibration-using-opencv-and-python.html)
-
+- 하지만, 캘리브레이션 시 frame 이 떨어지는 현상이 나타나고, frame 이 떨어지는 것에 비해서 캘리브레이션의 효용이 높다고 생각하지 않아 포기합니다.
 
 <br>
 
@@ -310,5 +299,6 @@ https://colab.research.google.com/github/google-coral/tutorials/blob/master/retr
 - 자기소개 *(분량 제한 없음)
 - 지원동기 *(분량 제한 없음)
 - 프로그램 개발 경험 *(경험이 있을 경우 어떤 프로그램이었는지 200자 내외로 작성)
+- 2020/07/13 open source contribute 톤 tensorflow lite microcontroller project 멘티 선발됨.
 
 <br>
