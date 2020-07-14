@@ -158,6 +158,11 @@ sudo apt-get install libedgetpu1-max
 ## Virtual Env
 
 - [가상환경 참고](https://jamanbbo.tistory.com/45)
+- tf1.15 말고도 다양한 환경에서 돌려보고자 여러 가상환경을 만들었음.
+- tffull_env : tensorflow 1.15 풀 버젼을 설치한 환경
+- tf2_env : tensorflow 2.x 을 설치한 환경
+- tfliteinter_env : 혹시 tensorflow lite 의 interpreter 만 설치할 수는 없는건가 해서 만든 환경.
+- 하지만 실제로는 tffull_env 만 사용했고, 추후 시간이 남는다면 tf2_env 부터 차례차례 해볼 생각.
 
 ```
 pip3 list
