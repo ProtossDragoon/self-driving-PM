@@ -305,7 +305,9 @@ pip3 list
 - 자기소개 *(분량 제한 없음)
 - 지원동기 *(분량 제한 없음)
 - 프로그램 개발 경험 *(경험이 있을 경우 어떤 프로그램이었는지 200자 내외로 작성)
-- 2020/07/13 open source contribute 톤 tensorflow lite microcontroller project 멘티 선발됨.
-- 2020/07/20 한양대학교 자동차동아리 형들과 microcontroller (tc237d) study 시작예정
+- 2020/07/13 open source contribute 톤 tensorflow lite microcontroller project 멘티 선발
+- 2020/07/20 한양대학교 자동차동아리 형들과 microcontroller (tc237d) study 시작
+- 2020/08/16 세종대학교 인공지능 동아리 ROS + RL study 시작
+- 학부연구생?
 
 <br>
