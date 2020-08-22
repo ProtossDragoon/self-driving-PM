@@ -196,14 +196,15 @@ pip3 list
 - 따라서 [이 링크를 참고](https://qengineering.eu/install-tensorflow-1.15.2-on-raspberry-pi-4.html)
 
 ```
-(tffull_env) sudo apt-get install libhdf5-dev libc-ares-dev libeigen3-dev
-(tffull_env) sudo apt-get install libatlas-base-dev libatlas3-base
-(tffull_env) pip install h5py
-(tffull_env) pip install six 
-(tffull_env) pip wheel mock
-(tffull_env) pip wheel wheel
-(tffull_env) pip install tensorflow-1.15.2-cp37-cp37m-linux_armv7l.whl
+(tffull_env) ~$ sudo apt-get install libhdf5-dev libc-ares-dev libeigen3-dev
+(tffull_env) ~$ sudo apt-get install libatlas-base-dev libatlas3-base
+(tffull_env) ~$ pip install h5py
+(tffull_env) ~$ pip install six 
+(tffull_env) ~$ pip wheel mock
+(tffull_env) ~$ pip wheel wheel
+(tffull_env) ~$ pip install tensorflow-1.15.2-cp37-cp37m-linux_armv7l.whl
 // sudo pip install 명령어 사용시, 전역에 깔려버림.
+// tensorflow-1.15.2-cp37-cp37m-linux_armv7l.whl 은 root directory 에 다운로드 되어 있으므로 경로 주의할것.
 ```
 
 <br>
