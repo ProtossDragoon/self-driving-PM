@@ -17,7 +17,7 @@ Could Personal Mobility Drive Automatically? <br>
 
 ### README-IMG
 
-- README.md 에 사용된 
+- README.md 에 사용된 이미지
 
 <br>
 
