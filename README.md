@@ -5,6 +5,18 @@ Could Personal Mobility Drive Automatically? <br>
 
 <br>
 
+## File Structure
+
+### LAB
+
+- 공부중
+
+### RELEASE
+
+- 사용 가능한 버전
+
+<br>
+
 ## Goal
 
 ![뚝섬](README-IMG/뚝섬유원지.png) <br>
