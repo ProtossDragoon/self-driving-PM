@@ -16,9 +16,9 @@
 ### 설치
 
 ```
-<경로>/UnrealEngine$ ./Setup.sh
-<경로>/UnrealEngine$ ./GenerateProjectFiles.sh
-<경로>/UnrealEngine$ make
+<이폴더의경로>/UnrealEngine$ ./Setup.sh
+<이폴더의경로>/UnrealEngine$ ./GenerateProjectFiles.sh
+<이폴더의경로>/UnrealEngine$ make
 ```
 
 <br>
