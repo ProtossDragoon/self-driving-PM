@@ -1,5 +1,7 @@
 # self-driving-PM
-Could Personal Mobility Drive Automatically?
+
+Could Personal Mobility Drive Automatically? <br>
+과연 소형/퍼스널 모빌리티가 스스로 달릴 수 있을까요? <br>
 
 <br>
 
@@ -15,25 +17,32 @@ https://blog.naver.com/verena_/221660048293
 
 <br>
 
-### Course 0 : 세종대학교 (실내)
+### Trial1 : 실내무인주행 (난이도 중)
 
-이노베이션센터에서, 실내주행용을 먼저 개발하여 실험.
+![세종대학교b1](LAB/simulator/gazebo/srcimg/floor_b1.jpg) 
 
 <br>
 
-### Course 1 : 뚝섬 > 반포 (난이도 중상)
+- Goal : 스스로 엘리베이터에 탑승할 수 있는 수준의 주행로봇을 제작.
+
+<br>
+
+### Trial2 - Course1 : 청담 > 반포 (난이도 중상)
+
+![청담반포](README-IMG/청담반포2.png)
+
+- Goal : 자전거도로를 따라 청담에서 반포까지 갈 수 있는 모빌리티를 제작.
+
+<br>
+
+
+### Trial2 - Course2 : 뚝섬 > 반포 (난이도 상)
 
 ![뚝섬반포](README-IMG/뚝섬반포2.png)
 
 <br>
 
-- 경로에 다리(bridge) 와 급격한 커브가 서 큰 환경 변화를 감당해야 한다.
-
-<br>
-
-### Course 2 : 청담 > 반포 (난이도 중하)
-
-![청담반포](README-IMG/청담반포2.png)
+- Goal : 자전거도로를 따라 뚝섬에서 반포까지 갈 수 있는 모빌리티를 제작.
 
 <br>
 
