@@ -13,7 +13,7 @@ Could Personal Mobility Drive Automatically? <br>
 
 ### RELEASE
 
-- 사용 가능한 버전
+- 사용 가능한 버전 (2022년 출시 목표)
 
 ### README-IMG
 
