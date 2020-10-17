@@ -10,22 +10,32 @@
 
 - [Project 칸반보드](https://github.com/users/ProtossDragoon/projects/3)
 
+<br>
+
 ## 프로젝트 1차
 
 - [20.04 교내 과제 : 전동킥보드 수거와 재배치 이슈 제시 + 임베디드 디바이스 제안]
 - [20.09 교내 과제 : ]
 - 세종대학교 박기호 교수님 임베디드시스템 과목 A+ 로 장렬히 마무리. 감사합니다.
 
+<br>
+
 ## 사이드 프로젝트
+
+<br>
 
 ### 오픈소스 컨트리뷰톤
 
 - [open source contribute tone](https://www.oss.kr/) 신청
 - 2020/07/13 open source contribute 톤 tensorflow lite microcontroller project 멘티 선발
 
+<br>
+
 ### ROS 스터디
 
 - 2020/08월 ~ 2020/9월 세종대학교 인공지능 동아리 SAI 에서 ROS overview 스터디
+
+<br>
 
 ### MicroController 스터디
 
