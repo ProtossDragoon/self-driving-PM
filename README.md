@@ -5,7 +5,10 @@ Could Personal Mobility Drive Automatically? <br>
 
 <br>
 
-# 2021년 deer-corporation 에서 이 프로젝트를 진행하고 있습니다.
+### 2021년 deer-corporation 에서 이 프로젝트를 진행하고 있습니다.
+
+deer homepage : https://deering.co/#/
+deer self-driving recriutment : https://www.notion.so/Deer-coporation-ba92fb4da87748878dc4da68bf6a9f44
 
 <br>
 
